@@ -1,0 +1,269 @@
+/*
+h1 {
+	font-size: 80px;
+}
+*/
+
+
+
+
+
+/*header {
+	color: red;
+}*/
+
+/* -> header에 해당 스타일을 적용하면, 그 자식 관계에 있는 h1, p태그도 모두 red 색상으로 바뀐다. 
+/* 부모의 유전자를 모두 자식이 받는 것은 아니다. */
+/* -> a태그와 같이 자체적으로 가진css가 있으면 부모가 가진 유전자의 영향을 받지 않는다. */
+/* 부모의 모든 유전자를 자식이 받는 것은 아니다. */
+
+/*
+header h1,    
+footer h1 {
+	color: blue;
+}*/
+/* -> 자식 관계의 h1, p태그에 직접적으로 스타일을 적용하면, 부모에게 적용되어 유전된 스타일보다 우선된다. */
+
+/*
+header p,
+footer p{
+	color: green;
+}*/
+/* -> 부모를 명시함으로써 해당 자식 관계에 있는 태그에만 스타일을 적용할 수 있다.  
+
+/*
+footer h1 {
+	color: blue;
+}
+
+footer p {
+	color: green;
+}
+*/
+
+
+/*
+h1 {
+	color: red;
+}
+
+#test1 {
+	color: blue;
+}
+
+
+.test2 {
+	color: green;
+}
+
+input[type="text"] {
+	border: solid 10px red;
+}
+
+input[type="password"] {
+	border: solid 10px blue;
+}
+*/
+
+
+/*
+.bg-1 {
+	background-color: red;
+}
+
+.font-size-1 {
+	font-size: 50px;
+}
+
+
+#color-1 {
+	color: red;
+}
+
+#font-style-1 {
+	font-style: italic;
+}
+*/
+
+
+/*
+#intro h2 {
+	color: red;
+}
+
+#intro .container p {
+	color: blue;
+}
+*/
+
+/*
+#color-2 {
+	color: pink;
+}
+
+.color-1 {
+	color: green;
+}
+h1 {
+	color: red;
+}
+
+h1 {
+	color: blue;
+}  /* -> 동일한 선택자를 사용했을 경우, 나중에 적용된 css의 속성값의 우선순위가 높다. */ 
+
+
+
+/*
+#intro .container h1 {
+	color: pink;
+}
+
+
+#intro div h1 {
+	color: green;
+}
+
+#intro h1 {
+	color: blue;
+}
+
+header h1 {
+	color:  red;
+}
+*/
+
+
+
+
+
+/*
+div {
+	width: 100%; 
+	height: 300px; 
+	/* -> 공간의 크기가 가변적이게 됨(가변값의 기준점을 알아야 한다)*/
+	/* -> %를 이용할 때는 부모 태그의 영향을 받는다. */
+	/* => 공간을 만드는 속성, 픽셀로 단위를 설정하게 되면 브라우저 크기에 상관없이 고정값*/
+	/*min-width: 600px; 
+	max-width: 800px;
+	/* => 하한선과 상한선% 를 적용한 width속성 안에서 사용된다.  */
+
+	/*border: solid 10px red;*/ /* 선의 종류, 굵기, 색상 -> 순서는 상관x */
+	
+	/*border-radius: 50px;*/ /* 귀퉁이에 라운드 적용 */
+	
+
+	/*opacity: 1;*/  /* 투명도 (0~1, 0을 적용하면 화면에 노출되지는 않는다.)*/
+
+	/*background-color: yellow;
+}*/
+
+/*h1 {
+	color: rgb(123, 111, 21);*/ /* 핵사코드, rgb코드 */
+	/*font-size: 80px;
+	font-style: initial; /* initial - 초기값 */
+	/*font-family: 'Noto Sans KR', sans-serif;  
+	/* -> 복수의 서체를 적용 가능하다, 
+	앞에서부터 적용이 가능한 폰트로 먼저 적용이 된다.
+	각 브라우저에 맞는 폰트로 적용하기 위해서
+	, 를 사용해 여러 개의 서체를 적용해주면 되며 마지막에는 sans-serif로 한다.
+	(sans-serif - 모든 브라우저에 적용가능한 서체) */
+	/*font-weight: 300; /* 굵기 */
+	/*text-decoration: line-through; /* 밑줄 적용 */
+	/*text-align: center;  /* 글자 정렬, h태그의 영역 안에서만 움직일 수 있다. */
+
+	/*background-color: pink;
+
+}
+/*
+ul {
+	list-style: none;
+}
+*/
+/*
+a {
+	text-decoration: none;
+}
+*/
+
+
+
+
+/*
+#bg {
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+	background-image: url(icon.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+*/
+
+
+a:link {
+	color: red;
+}
+
+a:active {
+	color: blue;
+}
+
+a:hover {
+	color: pink;
+}
+
+input:focus {
+	border: solid 10px red;
+}
+
+/*
+li:first-child {
+	color: red;
+}
+
+li:last-child {
+	color: blue;
+}
+
+li:nth-child(2n + 1) {
+	color: gray;
+}
+*/
+
+
+
+
+li:before {
+	content: "***";
+}
+
+li:after {
+	content: "---";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,447 @@
+/*html, body {
+	margin: 0;
+	padding: 0;  
+}/*-> 숫자 하나만 넣는 경우, 4개의 모든 값을 n으로 주겠다. */
+
+.box-model {
+
+	/*box-sizing: border-box; */
+	/*padding을 사용 하더라도 공간에 대한 크기는 유지*/
+	/* box-model의 witdh와 height를 기준으로 해서, 
+	   이 크기 안쪽으로 border와 padding값 셋팅*/
+
+	width: 200px;
+	height: 200px;
+	background-color: lightgrey;
+	border: solid 10px red; 
+
+	margin: 100px 0 0 100px;
+	/*시계방향 : top - right - bottom - left*/
+	padding: 100px 0 0 100px;
+	
+	/*
+	margin-left: 100px;
+	margin-top: 100px;
+	margin-right: 100px;
+	margin-bottom: 100px;
+
+	padding-left: 100px;
+	padding-top: 100px;
+	padding-right: 100px;
+	padding-bottom: 100px;
+	*/
+}
+
+.margin-one {
+	width: 100%;
+	height: 100px;
+	background-color: yellow;
+
+	margin-bottom: 100px;	
+}
+
+.margin-two {
+	width: 100%;
+	height: 100px;
+	background-color: blue;
+
+	margin-top: 100px;
+}
+
+.margin-parent {
+	width: 300px;
+	height: 300px;
+	background-color: yellow;
+}
+
+.margin-child {
+	position: absolute;
+
+	width: 150px;
+	height: 150px;
+	background-color: blue;
+
+	margin-top: 100px;
+}
+/*
+h1 {       <h1>도 태생적으로 margin과 padding값을 가지고 있다 
+	display: inline-block;
+
+	width: 100px;
+	height: 100px;
+	background-color: yellowgreen;
+
+	margin-top: 100px;
+}
+
+span {
+
+	display: block;
+	width: 100px;
+	height: 100px;
+	background-color: pink;
+
+	margin-top: 100px;
+}
+*/
+
+
+
+
+.inline-block {
+	display: inline-block;
+	
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+}
+
+.inline, .inline-block, img, h1 {
+	vertical-align: middle;
+}
+
+
+
+
+
+.static-parent {
+	width: 300px;
+	height: 300px;
+	background-color: yellow;
+}
+
+.static-child {
+	/*position: static; */ /* 1.o 2.x 3.o => 2차원에 포함되는 속성값*/
+							/* 모든 html 태그는 2차원에서 부터 시작, 
+							position: static;의 값을 디폴트로 가지고 있다.*/
+
+	width: 150px;
+	height: 150px;
+	background-color: blue;
+
+	margin-top: 100px;
+	top: 100px;
+}
+
+.box1 {
+	width: 300px;
+	height: 200px;
+	background-color: grey;
+}
+
+.fixed-parent {
+	width: 300px;
+	/*height: 300px;*/
+	background-color: yellow;
+}
+
+.fixed-child {
+	position: fixed;  /* 1.x 2.o 3.x => 3차원에 포함되는 속성값*/
+
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+
+	/*margin-top: 100px;*/
+	/*top: 100px;*/
+}
+
+.box2 {
+	width: 300px;
+	height: 2000px;
+	background-color: green;
+}
+
+
+
+.box1 {
+	width: 300px;
+	height: 200px;
+	background-color: grey;
+}
+
+.relative-parent {
+	width: 300px;
+	/*height: 300px;*/
+	background-color: yellow;
+}
+
+.relative-child {
+	position: relative;  /* 1.o 2.o 3.x => 
+							2차원과 3차원의 특징 모두 포함*/
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+
+	/*margin-top: 100px;*/
+	/*top: 100px;*/
+}
+
+
+.box1 {
+	width: 300px;
+	height: 200px;
+	background-color: grey;
+}
+
+.absolute-parent {
+	position: static;
+
+	width: 300px;
+	height: 300px;
+	background-color: yellow;
+}
+
+.absolute-child {
+	position: absolute;  /* 1.x 2.o 3.x => 3차원에 포함되는 속성값*/
+
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+
+	/*margin-top: 100px;*/
+	top: 100px;
+}
+
+
+
+
+.z-one {
+	/*position: absolute;*/
+	
+	width: 200px;
+	height: 400px;
+	background-color: yellow;
+	/*z-index: 10;
+*/}
+
+.z-two {
+	position: absolute;
+
+	width: 200px;
+	height: 300px;
+	background-color: blue;
+
+	/*z-index: 20;*/
+}
+
+
+
+
+
+.left-1{
+	float: left;
+
+	width: 100px;
+	height: 150px;
+	background-color: blue;
+}
+
+.right-1 {
+	float: right;
+
+	width: 100px;
+	height: 150px;
+	background-color: green;
+}
+
+
+
+
+/*
+header {
+	width: 100%;
+	height: 100px;
+	background-color: yellow;
+}
+
+.left {
+	float: left;
+
+	width: 300px;
+	height: 200px;
+	background-color: pink;
+}
+
+.center {
+	float: left;
+
+	width: 500px;
+	height: 200px;
+	background-color: blue;
+}
+
+.right {
+	position: relative;
+	float: right;
+
+	width: 300px;
+	height: 200px;
+	background-color: green;
+}
+
+footer {
+	clear: both;
+
+	width: 100%;
+	height: 100px;
+	background-color: black;
+}
+
+
+section {
+	width: 1400px;
+	height: 200px;
+	background-color: orange;
+}
+*/
+
+
+
+/*
+.left-2 {
+	float: left;
+
+	width: 100px;
+	height: 150px;
+	background-color: yellow;
+}
+
+.right-2 {
+	float: right;
+
+	width: 100px;
+	height: 150px;
+	background-color: blue;
+}
+
+footer {
+	width: 100%;
+	height: 100px;
+	background-color: black;
+}
+
+.clearfix {
+	clear: both;
+}
+section {
+	overflow: hidden;
+	width: 800px;
+	background-color: orange;
+}
+*/
+
+/*
+.over-box {
+	overflow: hidden;
+	overflow-y: scroll;
+	overflow-x: scroll;
+
+	width: 200px;
+	height: 200px;
+	background-color: yellow;
+}
+*/
+
+
+
+.container {
+	display: flex;
+	/*flex-direction: row;
+	flex-wrap: wrap;*/
+
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: baseline;
+
+	width: 1000px;
+	height: 500px;
+	border: solid 10px red;
+}
+
+.item {
+	width: 200px;
+	height: 300px;
+}
+
+.one {
+	height: 100px;
+	background-color: yellow;
+}
+
+.two {
+	height: 200px;
+	background-color: blue;
+}
+
+.three {
+	/*width: 900px;*/
+	height: 300px;
+	background-color: orange;
+}
+
+
+.center-1 {
+	width: 300px;
+	height: 300px;
+	background-color: yellow;
+
+	margin: 0 auto;
+}
+
+.center-2 {
+	position: relative;
+
+	width: 300px;
+	height: 300px;
+	background-color: blue;
+
+	left: 50%;
+	margin-left: -200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
