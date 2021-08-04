@@ -3809,7 +3809,7 @@ main #blog_wrap .blog_media_wrap ul .blog_media_info span {
 
 
 
-/* 뉴스-TV연애 */
+/* 뉴스-TV연예 */
 .ent-container {
 	width: 980px;
 	margin: 0 auto;
@@ -3849,7 +3849,7 @@ main #blog_wrap .blog_media_wrap ul .blog_media_info span {
 
 /* --------------------------------------------------------> 초기값 */
 
-/* 뉴스-TV연애 상단 */
+/* 뉴스-TV연예 상단 */
 #ent-header {
 	width: 100%;
 	height: 62px;
@@ -3973,21 +3973,24 @@ main #blog_wrap .blog_media_wrap ul .blog_media_info span {
 
 
 
-/* 뉴스-TV연애 메인 */
+/* 뉴스-TV연예 메인 */
 #ent-main {
 	font-family: '나눔고딕',nanum gothic,'맑은고딕',malgun gothic,'돋움',Dotum,'Apple SD Gothic Neo',Helvetica,sans-serif;
-	padding-bottom: 1000px;
 }
 
 #ent-main .ent-container {
 	overflow: hidden;
 }
 
+
+/* 메인 왼쪽 */
 #ent-main .ent-left {
 	float: left;
 	width: 654px;
 
 	padding-right: 24px;
+
+	border-right: solid 2px #f1f1f1;
 }
 
 #ent-main .ent-left #ent-media-headline {
@@ -4371,7 +4374,6 @@ main #blog_wrap .blog_media_wrap ul .blog_media_info span {
 
 
 
-
 /* section-5 */
 #ent-main .ent-left #ent-section-5 {
 	padding: 24px 0 14px;
@@ -4568,7 +4570,7 @@ main #blog_wrap .blog_media_wrap ul .blog_media_info span {
 }
 
 #ent-main .ent-left #ent-section-7 .movie-wrap .right {
-	width: 412px;
+	width: 410px;
 	margin-left: 18px;
 }
 
@@ -4736,7 +4738,7 @@ main #blog_wrap .blog_media_wrap ul .blog_media_info span {
 /* sextion-9 */
 #ent-main .ent-left #ent-section-9 {
 	padding: 24px 0 20px;
-	border-bottom: solid 1px #e4e4e4;
+/*	border-bottom: solid 1px #e4e4e4;*/
 }
 #ent-main .ent-left #ent-section-9 .title-wrap {
 	margin-bottom: 17px;
@@ -4807,10 +4809,427 @@ main #blog_wrap .blog_media_wrap ul .blog_media_info span {
 
 
 
+/* 메인 오른쪽 */
 #ent-main .ent-right {
 	float: right;
 	width: 324px;
-	height: 2000px;
-	background-color: pink;
+
+	padding-left: 24px;
 }
 
+
+#ent-main .ent-right .ent-banner {
+	width: 300px;
+	height: 250px;
+	background-color: gray;
+
+	border: solid 1px #000000;
+
+	margin-bottom: 30px;
+}
+
+
+/* section-10 */
+#ent-main .ent-right #ent-section-10 {
+	padding-bottom: 12px;
+	border-bottom: solid 1px #e8e8e8;
+}
+
+#ent-main .ent-right #ent-section-10 .title-wrap {
+
+}
+
+#ent-main .ent-right #ent-section-10 .title-wrap h3 {
+	font-size: 16px;
+	margin-bottom: 8px;
+}
+
+#ent-main .ent-right #ent-section-10 .title-wrap a {
+	font-size: 12px;
+	color: #999;
+}
+
+#ent-main .ent-right #ent-section-10 .title-wrap a:hover {
+	text-decoration: underline;
+}
+
+#ent-main .ent-right #ent-section-10 ol {
+
+}
+
+#ent-main .ent-right #ent-section-10 ol li {
+	margin-bottom: 10px;
+}
+
+#ent-main .ent-right #ent-section-10 ol li a {
+
+}
+
+#ent-main .ent-right #ent-section-10 ol li .rank {
+	display: inline-block;
+	width: 16px;
+	padding-right: 10px;
+
+	font-size: 15px;
+	color: #e3458f;
+
+	text-align: center;
+
+	vertical-align: middle;
+}
+
+#ent-main .ent-right #ent-section-10 ol li p {
+	display: inline-block;
+	width: 270px;
+	vertical-align: middle;
+
+	font-size: 12px;
+
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#ent-main .ent-right #ent-section-10 ol li p:hover {
+	text-decoration: underline;
+}
+
+
+
+/* section-11 */
+#ent-section-11 {
+    border-bottom: solid 1px #f2f2f2;
+    padding-bottom: 24px;
+}
+
+#ent-section-11 ul {
+	margin-bottom: 12px;
+}
+
+#ent-section-11 ul li {
+	padding: 14px;
+	border-bottom: solid 1px #f2f2f2;
+}
+
+#ent-section-11 ul a {
+
+}
+
+#ent-section-11 ul .title-wrap {
+	margin-bottom: 10px;
+}
+
+#ent-section-11 ul .title-wrap .title-left {
+
+}
+
+#ent-section-11 ul .title-wrap .title-left .count {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	padding: 2px 4px;
+	border: solid 1px #e2458f;
+	
+	text-align: center;
+
+	color: #e2458f;
+	font-size: 10px;
+
+	margin-right: 8px;
+}
+
+#ent-section-11 ul .title-wrap .title-left h3 {
+	color: #e2458f;
+	font-size: 12px;
+}
+
+#ent-section-11 ul .title-wrap .title-left h3:hover,
+#ent-section-11 ul .title-wrap .title-left .sub-title:hover {
+	text-decoration: underline;
+}
+
+#ent-section-11 ul .title-wrap .title-left .sub-title:before {
+	display: inline-block;
+	margin: 0 3px 0 4px;
+	content: "";
+	width: 2px;
+	height: 2px;
+	background-color: #f5c4da;
+	border-radius: 1px;
+	vertical-align: 2px;
+
+}
+
+#ent-section-11 ul .title-wrap .title-left .sub-title {
+
+}
+
+#ent-section-11 ul .title-wrap .icon-arrow {
+	width: 8px;
+	height: 12px;
+	background-color: #e2458f;
+}
+
+#ent-section-11 ul .article-content {
+
+}
+
+#ent-section-11 ul .article-content .content-left {
+	width: 190px;
+
+}
+
+#ent-section-11 ul .article-content .content-left h4 {
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 18px;
+	margin-bottom: 6px;
+}
+
+#ent-section-11 ul .article-content .content-left h4:hover {
+	text-decoration: underline;
+}
+
+#ent-section-11 ul .article-content .content-left .source {
+	font-size: 11px;
+	color: #a6a6a6;
+}
+
+#ent-section-11 ul .article-content .content-left img {
+	width: 70px;
+	height: 70px;
+	border: solid 1px #000000;
+}
+
+
+#ent-section-11 .bottom {
+
+}
+
+#ent-section-11 .bottom .btn-wrap .btn {
+	width: 24px;
+	height: 24px;
+	background-color: #ffffff;
+	border: solid 1px #f2f2f2;
+
+	color: #d3d3d3;
+}
+
+#ent-section-11 .bottom .btn-wrap .btn-prev {
+	border-right: none;
+}
+
+#ent-section-11 .bottom .btn-wrap .btn-next {
+	color: #808080;
+}
+
+#ent-section-11 .bottom .more {
+	font-size: 12px;
+	color: #999;
+}
+
+#ent-section-11 .bottom .more:hover {
+	text-decoration: underline;
+}
+
+
+
+/* section-12 */
+#ent-section-12 {
+	padding: 20px 0 2px;
+	border-bottom: solid 1px #e8e8e8;
+}
+
+#ent-section-12 .title-wrap {
+	margin-bottom: 12px;
+}
+
+#ent-section-12 .title-wrap h3 {
+	font-size: 16px;
+}
+
+#ent-section-12 ul {
+
+}
+
+#ent-section-12 li {
+	width: 146px;
+	margin-bottom: 19px;
+}
+
+#ent-section-12 li img {
+	width: 100%;
+	height: 138px;
+	border: solid 1px #000000;
+	margin-bottom: 9px;
+}
+
+#ent-section-12 li h4 {
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 18px;
+
+	margin-bottom: 5px;
+}
+
+#ent-section-12 li h4:hover {
+	text-decoration: underline;
+}
+
+#ent-section-12 li span {
+	font-size: 11px;
+	color: #898989;
+}
+
+#ent-section-12 li span:hover {
+	text-decoration: underline;
+}
+
+
+/* section-13 */
+#ent-section-13 {
+	padding-top: 22px;
+}
+
+#ent-section-13 .title-wrap {
+	margin-bottom: 8px;
+}
+
+#ent-section-13 .title-wrap h3 {
+	font-size: 16px;
+    margin-bottom: 8px;
+    color: #e2458f;
+}
+
+#ent-section-13 .title-wrap .more {
+	font-size: 12px;
+	color: #999;
+}
+
+#ent-section-13 .heading {
+	margin-bottom: 8px;
+}
+
+#ent-section-13 .heading .heading-info {
+	width: 210px;
+}
+
+#ent-section-13 .heading h4 {
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 18px;
+}
+
+#ent-section-13 .heading h4:hover {
+	text-decoration: underline;
+}
+
+#ent-section-13 .heading .source {
+	font-size: 11px;
+	color: #999;
+}
+
+#ent-section-13 .heading img {
+	width: 70px;
+	height: 70px;
+	border: solid 1px #000000;
+}
+
+#ent-section-13 ul {
+
+}
+
+#ent-section-13 ul li {
+	margin-bottom: 10px;
+}
+
+#ent-section-13 ul li a {
+	display: block;
+	width: 100%;
+
+	font-size: 12px;
+	color: #222;
+
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+#ent-section-13 ul li a:before {
+	display: inline-block;
+	content: "";
+	width: 2px;
+	height: 2px;
+
+	margin: 7px 6px 0 0;
+
+	vertical-align: top;
+	background-color: silver;
+}
+
+#ent-section-13 ul li a:hover {
+	text-decoration: underline;
+}
+
+
+
+
+
+
+/* 하단 영역 */
+#ent-footer {
+	padding: 48px 0 41px 0;
+	text-align: center;
+
+	margin: 0 auto;
+    border-top: 1px solid #e8e8e8;
+}
+
+#ent-footer .policy-wrap {
+	font-family: "나눔고딕",NanumGothic,"돋움",Dotum,Helvetica,sans-serif;
+	font-size: 12px;
+
+	margin-bottom: 9px;
+}
+
+#ent-footer .policy-wrap span:before {
+	content: "";
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+    margin: 0 8px;
+    background-color: #d7d7d7;
+    vertical-align: -1px;
+}
+
+#ent-footer .policy-wrap span:first-child:before {
+	content: none;
+}
+
+#ent-footer .policy-wrap span.on {
+	font-weight: bold;
+}
+
+#ent-footer p {
+	font-size: 11px;
+	color: #7e7e7e;
+	padding: 3px 0 15px;
+}
+
+#ent-footer .end {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#ent-footer .end img {
+	width: 65px;
+	height: 15px;
+}
+
+#ent-footer .end p {
+	font-size: 9px;
+	font-family: tahoma,Helvetica,sans-serif;
+	margin-bottom: -10px;
+}
