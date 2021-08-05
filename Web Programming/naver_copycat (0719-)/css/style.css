@@ -5233,3 +5233,314 @@ main #blog_wrap .blog_media_wrap ul .blog_media_info span {
 	font-family: tahoma,Helvetica,sans-serif;
 	margin-bottom: -10px;
 }
+
+
+
+
+
+
+
+/* game.html */
+.game-container {
+	width: 1280px;
+	margin: 0 auto;
+}
+.game-flex-between {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.game-flex-start {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.game-flex-end {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.game-flex-center {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;	
+}
+
+.game-shadow {
+	box-shadow: 0 2px 30px 0 rgb(0 0 0 / 6%);
+}
+
+.game-p-30 {
+	padding: 30px;
+}
+
+.font-17 {
+	font-size: 17px;
+}
+
+.font-19 {
+	font-size: 19px;
+}
+
+.font-400 {
+	font-weight: 400px;
+}
+
+/*--------------------------------------------------------> 초기화 작업*/
+
+/* GAME 상단 영역 */
+body {
+	min-width: 1300px;
+}
+
+#game-body {
+	background-color: rgba(0, 0, 0, 0.02);
+}
+
+#game-header {
+	width: 100%;
+	background-color: #4e41db;
+}
+
+#game-header nav {
+	height: 60px;
+	font-family: -apple-system,BlinkMacSystemFont,Apple SD Gothic Neo,Helvetica,Arial,NanumGothic,나눔고딕,Malgun Gothic,맑은 고딕,Dotum,굴림,gulim,새굴림,noto sans,돋움,sans-serif;
+}
+
+#game-header nav .left {
+
+}
+
+#game-header nav .left h2 {
+	font-size: 15px;
+	font-weight: 800;
+	color: #ffffff;
+}
+
+#game-header nav .left h1 {
+	font-size: 20px;
+	margin-left: 9px;
+}
+
+#game-header nav .left h1 a {
+	color: #ffffff;
+}
+
+#game-header nav .left ul {
+
+}
+
+#game-header nav .left ul li {
+
+}
+
+#game-header nav .left ul li a {
+	color: rgb(159, 152, 236);
+	font-size: 18px;
+	font-weight: 600;
+}
+
+#game-header nav .left ul li a:before {
+	display: inline-block;
+	content: "";
+	width: 1px;
+	height: 14px;
+	border-radius: .5px;
+	background-color: #9da5b6;
+
+	margin: 0 12px;
+}
+
+#game-header nav .right {
+
+}
+
+#game-header nav .right .search-wrap {
+	width: 300px;
+	border-radius: 20px;
+	background-color: rgba(0, 0, 0, .28);
+	overflow: hidden;
+}
+
+#game-header nav .right .search-wrap input {
+	width: calc(100% - 38px);
+	height: 38px;
+	background-color: transparent;
+	padding: 10px 12px 9px 14px;
+	border: none;
+
+	color: #ffffff;
+	font-size: 15px;
+}
+
+#game-header nav .right .search-wrap input::placeholder {
+	color: rgb(192, 189, 225);
+}
+
+#game-header nav .right .search-wrap input:focus {
+	outline: none;
+}
+
+#game-header nav .right .search-wrap button {
+	width: 38px;
+	height: 38px;
+	background-color: transparent;
+	border: none;
+}
+
+#game-header nav .right .ticket-wrap {
+	position: relative;
+	width: 40px;
+	height: 40px;
+}
+
+#game-header nav .right .ticket-wrap .btn-ticket {
+	display: block;
+	width: 40px;
+	height: 40px;
+
+	background-image: url(../img/tickets.png);
+	background-repeat: no-repeat;
+
+	margin-left: 10px;
+
+/*	border: solid 1px #ffffff;*/
+}
+
+#game-header nav .right .ticket-wrap .bubble-msg {
+	position: absolute;
+    width: 176px;
+    background-color: #697183;
+    border-radius: 8px;
+
+    padding: 10px 12px;
+/*    top: 50px;*/
+    left: 50%;
+    transform: translateX(-50%);
+    
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 600;
+    z-index: 100;
+}
+
+#game-header nav .right .ticket-wrap .bubble-msg:before {
+	display: inline-block;
+    width: 12px;
+    height: 8px;
+    background-size: 12px 8px;
+    background-repeat: no-repeat;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAQCAYAAAAMJL+VAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAGKADAAQAAAABAAAAEAAAAADSRT5sAAABnklEQVQ4EWNgGOqAkRgPzJw5k/XijVedDAyMMf8ZGP4wMv6f42Ch3hgWFvaXkH4WQgpA8hduvVoEpCIYGIDGA8H//wy1B07eEgYys8ECeAhmPHJgqeyi5kyggeUY6v4zmJpZOd84fXzfVQw5JAG8QZRV2mrA8Of/if8M/9mR9CCYjIyfWZnZjCd1l91GCKKymFC5CF5ZWSfv/z//VuE0HKT0/3/e339/rm5omM+B0InKwmnBlz+/ZwKVqqIqx8L7z6D/8uPTiVhkwEJY4yCzuDUN6LpKXJqwiBtbWLrcPnVi32V0OYw4yCxp1WP49+8kMMHg9Da6ISA+0KAvrKxsJhO7ym8iy6MEUVbDVB6Gv/9WkWo4yEBgAub5/efX6sLCPk6cFjB8ejcdKKmOrIAUNjA56/5k/DYZWQ88DrKLWpP+//9fiyxJJtvI3Nr5HjB/XALpB8dBdnmH9v/ff04DLUDxHpkWMDAyMn5lYGE1ndZVfp2xoWEm16uPr84Aw1CTXAOx6QO6/KoYv5gZs6ahxWygAhdsiigUE/v265s0ALRdh9/W2hZYAAAAAElFTkSuQmCC);
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 85px;
+}
+
+#game-header nav .right .btn-login {
+	width: 60px;
+    border: solid 1px hsla(0, 0%, 80%, .3);
+    border-radius: 8px;
+    padding: 7px 0 6px;
+
+    margin-left: 10px;
+
+    font-size: 12px;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+
+
+#game-header .game-events-wrap {
+	padding: 80px 0;
+}
+
+#game-header .game-events-wrap .event-wrap {
+	position: relative;
+	width: 407px;
+	height: 264px;
+	border-radius: 40px;
+
+	top: 0;
+	transition: top linear 0.25s;
+}
+
+#game-header .game-events-wrap .event-wrap:hover {
+	top: -8px;
+
+	box-shadow: 0px 10px 17px -2px rgba(0,0,0,0.74);
+	-webkit-box-shadow: 0px 10px 17px -2px rgba(0,0,0,0.74);	
+	-moz-box-shadow: 0px 10px 17px -2px rgba(0,0,0,0.74);
+}
+
+#game-header .game-events-wrap .event-wrap.one {
+	background-color: rgb(120, 64, 81);
+}
+
+#game-header .game-events-wrap .event-wrap.two {
+	background-color: rgb(42, 44, 52);
+}
+
+#game-header .game-events-wrap .event-wrap.three {
+	background-color: rgb(237, 192, 75);	
+}
+
+#game-header .game-events-wrap .event-wrap .event-title-wrap {
+	position: absolute;
+
+	left: 30px;
+	bottom: 30px;
+
+	color: #ffffff;
+}
+
+#game-header .game-events-wrap .event-wrap .event-title-wrap span {
+	display: inline-block;
+	border: solid 2px #ffffff;
+	border-radius: 20px;
+
+	padding: 4px 8px 2px;
+
+	font-size: 12px;
+	font-weight: 600;
+
+	text-align: center;
+
+	margin-bottom: 15px;
+}
+
+#game-header .game-events-wrap .event-wrap .event-title-wrap h2 {
+
+}
+
+
+
+
+
+/* game 메인 영역 */
+#game-main .game-container {
+	align-items: stretch;
+}
+
+#game-main .left {
+	width: 900px;
+	height: 2000px;
+	background-color: yellow;
+}
+
+#game-main .right {
+	width: 358px;
+	height: 2000px;
+	background-color: gray;
+}
+
+
+
