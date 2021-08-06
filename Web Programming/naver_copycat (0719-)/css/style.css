@@ -5280,6 +5280,10 @@ main #blog_wrap .blog_media_wrap ul .blog_media_info span {
 	padding: 30px;
 }
 
+.game-m-t-20 {
+	margin-top: 20px;
+}
+
 .font-17 {
 	font-size: 17px;
 }
@@ -5289,7 +5293,7 @@ main #blog_wrap .blog_media_wrap ul .blog_media_info span {
 }
 
 .font-400 {
-	font-weight: 400px;
+	font-weight: 400;
 }
 
 /*--------------------------------------------------------> 초기화 작업*/
@@ -5528,13 +5532,527 @@ body {
 /* game 메인 영역 */
 #game-main .game-container {
 	align-items: stretch;
+	font-family: "Sandoll Nemony2", "Apple SD Gothic NEO", "Helvetica Neue", Helvetica, 나눔고딕, NanumGothic, "Malgun Gothic", "맑은 고딕", 굴림, gulim, 새굴림, "noto sans", 돋움, Dotum, sans-serif;
 }
 
 #game-main .left {
 	width: 900px;
-	height: 2000px;
-	background-color: yellow;
+/*	background-color: yellow;*/
 }
+
+#game-main .left .left-banner {
+	width: 900px;
+	height: 120px;
+
+	border-radius: 12px;
+	overflow: hidden;
+
+	margin-bottom: 24px;
+}
+
+#game-main .left .left-banner a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#game-main .left .left-banner img {
+	width: 100%;
+	height: 100%;
+}
+
+
+/* 게임 라운지 인기글 */
+.game-section {
+	position: relative;
+
+	background-color: #ffffff;
+	box-shadow: 0 2px 30px 0 rgba(0 0 0 / 6%);
+	border-radius: 12px;
+
+	padding: 27px 30px 40px;
+
+	margin-bottom: 40px;
+}
+
+.game-section .section-title-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.game-section .section-title-wrap h2 {
+	font-size: 19px;
+	font-weight: 900;
+	font-family: "Sandoll Nemony2", "Apple SD Gothic NEO", "Helvetica Neue", Helvetica, 나눔고딕, NanumGothic, "Malgun Gothic", "맑은 고딕", 굴림, gulim, 새굴림, "noto sans", 돋움, Dotum, sans-serif;
+}
+
+.game-section .section-middle-nav {
+
+}
+
+.game-section .section-middle-nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+	border-bottom: solid 1px rgba(0, 0, 0, 0.07);
+}
+
+.game-section .section-middle-nav li {
+
+}
+
+.game-section .section-middle-nav a {
+	display: block;
+	padding: 14px;
+	border-bottom: solid 3px transparent;
+
+	font-size: 15px;
+	font-weight: 700;
+	font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", Helvetica, Arial, NanumGothic, 나눔고딕, "Malgun Gothic", "맑은 고딕", Dotum, 굴림, gulim, 새굴림, "noto sans", 돋움, sans-serif;
+	color: #777;
+}
+
+.game-section .section-middle-nav a.active {
+	border-bottom: solid 3px #222;
+	color: #222;
+}
+
+.game-section .section-body-wrap {
+	margin-top: 18px;
+}
+
+.game-section .section-body-wrap .image-txt-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.game-section .section-body-wrap .image-txt {
+	width: 407.5px;
+}
+
+.game-section .section-body-wrap img {
+	width: 180px;
+	height: 100px;
+	border-radius: 8px;
+	border: solid 1px rgba(0, 0, 0, 0.06);
+
+	margin-right: 15px;
+
+}
+
+.game-section .section-body-wrap .txt {
+	width: 212px;
+}
+
+.game-section .section-body-wrap .title {
+	/* image-txt 바깥쪽의 title에도 같은 디자인을 적용하기 위해 .image-txt 생략 */
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 20px;
+}
+
+.game-section .section-body-wrap .source {
+	/* 동일 */
+	margin-bottom: 3px;
+	font-size: 13px;
+	color: #999;
+}
+
+.game-section .btn-circle {
+	position: absolute;
+
+	width: 55px;
+	height: 55px;
+	background-color: #ffffff;
+	border-radius: 50%;
+	box-shadow: 0 2px 30px 0 rgb(0 0 0 / 8%);
+
+	bottom: -27.5px;
+
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+
+
+
+/*--------------------------------------------> 디폴트*/
+
+
+#game-section-1 {
+
+}
+
+#game-section-1 .section-btn-wrap {
+
+}
+
+#game-section-1 .section-btn-wrap a {
+	font-size: 14px;
+	font-weight: 700;
+	color: #9da5b6;
+}
+
+#game-section-1 .section-btn-wrap a:before {
+	content: " ";
+    display: inline-block;
+    margin-right: 4px;
+    width: 10px;
+    height: 9px;
+    background-size: 10px 9px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAAAXNSR0IArs4c6QAAASdJREFUOBG10rFqAkEQBuDZRRTEJpI3SS+aQixSKYRImhAsfB0FS0lh4RnCNWdASSPY+iaaVKegwo4zSzac56m7SqbZu2X2Y+7+FXBlef74ARR0UEBKIjTFNd7gY1RDITxETLFD2FxeCsYxdginQS+oJIwYJaR41qO6mMcwEPLlqVr2nCY8hdVr5R4PZg3aYBoMgll2tf1uIALKfPrtsVQK47/AFuNzMtws+kphi6Jvq5/NZDic3kRBF0yDFPS9AQi9C9erL4O6YhqkLw0MyKtBB/74NXppf3sUp2kCiJ4zzzKXuW1QMhOzwSuj9Bu6tEav1VmMz+qUOZjlevGJAEXeTCgrjM/9XZsTqDW2B/JLAuqEHYAxtHAuAO63Kp703R9VrJr/u2kHms3O2SYqdmEAAAAASUVORK5CYII=);
+    background-repeat: no-repeat;
+}
+
+#game-section-1 .section-btn-wrap a:last-child {
+	margin-left: 14px;
+}
+
+#game-section-1 .section-btn-wrap a.active {
+	color: #222;
+}
+
+#game-section-1 .section-btn-wrap a.active:before {
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAFKADAAQAAAABAAAAEgAAAAA9nQVdAAABGklEQVQ4EWNkoBCoqqr6/P37dyojIyMLEGcwUmIe0LDgf//+rfj//z8LyBygga+ZyDUQ3TCoOf/JciEOw/4BXRhNsgtxGcbExJRw9+7dFSS5EJ9hd+7cWQwOR2LDkBjDwAYaGxtzffjwIQXI+c/BwTH/6tWrX9AtIdYwsIHKysobgdHuB+YwMp7l4uJyvXz58nuYoaQYBtIDihQnmGagwcbfvn3braurKwgSI9UwkB5mISEhXSANwjAg9efPHxdhYeE/QAsWwhItVPIfKDZhEQDTgEwzQsNwK1CjA7IEFjZBw0B6wMmGCEOJMgxuIIiBx1CiDUMxEIehJBkGMgMDgFwKTEr7lZSU/qqoqMRiKCBHAGqoBzl6qa4HAJW9xZF9LBvnAAAAAElFTkSuQmCC);
+}
+
+
+
+
+#game-section-1 ol {
+
+}
+
+#game-section-1 ol li {
+	padding: 10px 0;
+	border-bottom: solid 1px rgba(0, 0, 0, 0.03);
+}
+
+#game-section-1 ol li a {
+
+}
+
+#game-section-1 ol li .game-thumbnail {
+	margin-right: 10px;
+	border-radius: 8px;
+
+}
+
+#game-section-1 ol li .txt-info {
+	width: 690px;
+	margin-right: 10px;
+
+}
+
+#game-section-1 ol li .txt-info h3 {
+	font-size: 16px;
+	font-weight: 600;
+
+	margin-bottom: 3px;
+}
+
+#game-section-1 ol li .txt-info .source-wrap {
+	font-size: 13px;
+}
+
+#game-section-1 ol li .txt-info .source-wrap span:before {
+	display: inline-block;
+	content: "";
+	width: 2px;
+	height: 2px;
+	margin: -5px 5px 3px;
+	border-radius: 50%;
+	background-color: #d0d4dc;
+}
+
+#game-section-1 ol li .txt-info .source-wrap span:first-child:before {
+	content: none;
+}
+
+#game-section-1 ol li .txt-info .source-wrap .game {
+	color: #444;
+	font-weight: 500;
+}
+
+#game-section-1 ol li .txt-info .source-wrap .author {
+	color: #858894;
+}
+
+#game-section-1 ol li .txt-info .source-wrap .level {
+	color: #858894;
+}
+
+#game-section-1 ol li .txt-info .source-wrap .rank {
+	color: #858894;
+}
+
+#game-section-1 ol li .blog-thumbnail {
+	border-radius: 8px;
+}
+
+
+
+
+
+/* 생생 주요 게임 뉴스 */
+#game-section-2 .section-title-wrap .more {
+	font-size: 13px;
+	font-weight: 400;
+}
+
+#game-section-2 .section-body-wrap {
+
+}
+
+
+
+#game-section-2 .section-body-wrap ul {
+	margin-top: 25px;
+}
+
+#game-section-2 .section-body-wrap li {
+	margin-bottom: 11px;
+}
+
+#game-section-2 .section-body-wrap li:last-child {
+	margin-bottom: 0;
+}
+
+#game-section-2 .section-body-wrap li a:before {
+	display: inline-block;
+	content: "";
+	width: 3px;
+	height: 3px;
+	background-color: #9da5b6;
+	border-radius: 50%;
+	margin-right: -15px;
+}
+
+#game-section-2 .section-body-wrap ul h2 {
+
+}
+
+#game-section-2 .section-body-wrap  ul .title {
+	width: 776px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+#game-section-2 .section-body-wrap  ul .source {
+
+}
+
+
+
+
+
+/* 오리지널 시리즈 */
+#game-section-3 .section-body-wrap .image-txt .category {
+	display: inline-block;
+
+	font-size: 13px;
+	color: #7776ff;
+	margin-bottom: 3px;
+}
+
+
+
+
+/* 인기게임 영상 */
+#game-section-4 ol {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+#game-section-4 li {
+
+}
+
+#game-section-4 a {
+	display: block;
+}
+
+#game-section-4 .image-wrap {
+	position: relative;
+	width: 263px;
+	height: 148px;
+	border-radius: 8px;
+}
+
+#game-section-4 .image-wrap img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+#game-section-4 .image-wrap .icon-play {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background-color: #ffffff;
+
+	left: 10px;
+	bottom: 12px;
+}
+
+#game-section-4 .image-wrap .time {
+	position: absolute;
+	background-color: rgba(0, 0, 0, .5);
+	padding: 2px 6px;
+	border-radius: 6px;
+
+	font-size: 14px;
+	color: #ffffff;
+
+	right: 10px;
+	bottom: 10px;
+}
+
+#game-section-4 .section-body-wrap .image-txt {
+	width: 100%;
+	margin-top: 10px;
+}
+
+#game-section-4 .image-txt h3 {
+	font-size: 15px;
+}
+
+#game-section-4 .image-txt .source,
+#game-section-4 .image-txt .count {
+	font-size: 13px;
+	color: #999;
+}
+
+
+
+/* 게임 라운지 인기글 */
+#game-section-5 .section-title-wrap i {
+	display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-top: 1px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAA81JREFUWAnFV0FLVFEUPvfNpLZsEyjWcv6Au2gzRTnTSjDSGRflCC1SoigKql0YFIgR2iLQsUUzCgm6cWYKctcqf4CuLENBgoIIDWbe7TvnzX2+N/N8jmXMhffueeeee75zzz333POImtxUo/haa2s6XzyjSPcQqS5NugM9Hm56U5HaRL+iSS1kUomPSinbGQt/H2hAdnm5TW/9vkla3wHoyXB1ziiM2SalxlR764vBeHw3bE6oATO5Yq9NehyrPyVKFK1hwgJp630kEv1y3Ipg1UQ7dqWjUimfJmVf0EQ9pCnGfHhhwyJ1+1o6Mc/fQS3QAACqbL70WGv7IU/CilZIWfcy6e4PQUpqedO50jnS9jN4rEvGLHqS6U8+gkGwz9/qDBDwXCEPyT4soYznVqa/+2XQZL8q/xfrmZ4t3cDWPccTBdDcYDqZqtVTZ8BUfmmUbHqAge+RqNV7tS+x7Fd9uK/Xc8V4pWzPY0EnCJ4YSl0SrxotPgN4zyvafssrj0bUxX8FNyBsRLmi37EnIsq67I0J1wAn2nfXJOAsa2QolZg0CoL67JvCBAJ0mMcQaJODA8mRIDnDm8oXh8m2JzgwVXtbzJwOywjwUWNwDjjec8Pfr9eKzpoxL214tb3EEXQzhhzrqoAYAKbF51x4iPbaQKlVxt/Y08+G76UNr7YXndAtfM4pjIkmL85wTpJRq40eNRyodVGGl5c2vKDe0a1WGYsxWUYMcNIrJw69GDQxiKfUnge8dJCsl2cwDKYYAGgnYSDDeYXDaMSKuwVeOmyOjLkYDqYYAJfIpcLp9UAFRkCrdUOSl3aZwYTBMJjGA2KAye3BU/3cFtXiesBL+6Xqv/YwnJu0aoAj2Np6zM0L9VP9nHQ6/g2u/8UP0/7R/b9cDBwDloo6oppvtdiPnd129D8dXkPvpYakPEJVDL7htpgtBmAVm9iTmFypRGse+VAyM5C8EioQMFjF4BtWrnJnCzR9Elnc5wFzjpZlMKqY4gGk0kWktrvYFJRbdL8RxKnZUpIq9iuRjVjXh/q7C43Mq2Lg4AATTTwgNRyXUahkpJhoRJOA604k5U7XkAPmzeQL5xkD7t9mTNcA5GkbaXBM5nMlg2LiAF2HHmadtk1PZSLXi9Wi1T2GXECCuYFg7MrmSnLNhqLA7Qjlr/IIHSpNrJN1MwZjGWnfSptRkLgeYIu4UlHKGuXKhcsormSMpX/bm5JM6kLo9lZDrNPnAWbwXmWPqCgVtys9LuCNFqWuEc0qy9kA05r2Y2IM4L6pv2ZeQxAb/+Xn1IvRFPoPR0/sadvoShcAAAAASUVORK5CYII=);
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+#game-section-5 .section-title-wrap .info {
+	font-size: 13px;
+	color: #999999;
+}
+
+#game-section-5 .section-body-wrap .image-wrap {
+	position: relative;
+	width: 190px;
+	height: 120px;
+}
+
+#game-section-5 .section-body-wrap .image-wrap img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: none;
+	margin-right: 0;
+}
+
+#game-section-5 .section-body-wrap .image-wrap .badge {
+	position: absolute;
+	display: inline-block;
+
+	color: #ffffff;
+	background-color: rgb(102, 100, 246);
+	font-size: 15px;
+	font-weight: 700;
+	padding: 4px 8px;
+	border-radius: 8px;
+
+	top: -5px;
+	left: -5px;
+}
+
+#game-section-5 .section-body-wrap .image-wrap .badge.open {
+	background-color: rgb(230, 58, 62);
+}
+
+
+#game-section-5 .section-body-wrap .txt-wrap {
+	width: 190px;
+	margin-top: 12px;
+}
+
+#game-section-5 .section-body-wrap .txt-wrap h3 {
+	font-size: 15px;
+	font-weight: 600;
+
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+#game-section-5 .section-body-wrap .txt-wrap p {
+	font-size: 13px;
+	font-weight: 500;
+}
+
+#game-section-5 .section-body-wrap .txt-wrap span {
+	font-size: 12px;
+	color: grey;
+}
+
+
+
+
+/* 공식 게임 라운지 */
+#game-section-6 .section-title-wrap h2 em {
+	font-style: initial;
+	color: #4e41db;
+}
+
+#game-section-6 .section-title-wrap .more {
+	font-size: 13px;
+    font-weight: 400;
+}
+
+#game-section-6 .section-body-wrap .image-txt-wrap {
+	margin-bottom: 20px;
+}
+
+#game-section-6 .section-body-wrap .image-txt-wrap:last-child {
+	margin-bottom: 0;
+}
+
+#game-section-6 .section-body-wrap .image-txt img {
+	width: 60px;
+	height: 60px;
+	border: 1px solid rgba(0,0,0,.05);;
+	border-radius: 15px;
+
+	margin-right: 13px;
+}
+
+#game-section-6 .section-body-wrap .image-txt {
+	width: 408.5px;
+}
+
+#game-section-6 .section-body-wrap .image-txt .txt {
+	width: 335px;
+}
+
+#game-section-6 .section-body-wrap .image-txt .title {
+	line-height: 21px;
+}
+
+
+
 
 #game-main .right {
 	width: 358px;
