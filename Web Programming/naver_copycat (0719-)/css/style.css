@@ -6054,11 +6054,368 @@ body {
 
 
 
+
+/* 메인 오른쪽 영역 */
 #game-main .right {
 	width: 358px;
-	height: 2000px;
-	background-color: gray;
+}
+
+.right-section {
+	background-color: #ffffff;
+	box-shadow: 0 2px 30px 0 rgba(0 0 0 / 6%);
+	border-radius: 12px;
+
+	padding: 30px;
+	margin-bottom: 24px;
+}
+
+.right-section .right-section-body {
+	margin-top: 20px;
+}
+
+.right-section .title-wrap {
+
+}
+
+.right-section .title-wrap h2 {
+	font-size: 17px;
+	font-weight: 900;
+}
+
+.right-section .title-wrap a {
+	font-size: 13px;
+	font-weight: 400;
+	color: #444;
+}
+
+/*-------------------> 오른쪽 영역 디폴트 작업*/
+
+
+
+
+
+#visitor-section .text-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#visitor-section .text-wrap p {
+	font-size: 13px;
+	color: #9da5b6;
+	text-align: center;
+
+	margin-top: 20px;
+}
+
+#visitor-section .text-wrap .input-wrap {
+	position: relative;
+	width: 250px;
+	height: 44px;
+	background-color: #f5f6fa;
+	border-radius: 12px;
+	overflow: hidden;
+
+	margin-top: 18px;
+}
+
+#visitor-section .text-wrap .input-wrap input {
+	width: calc(100% - 44px);
+	height: 100%;
+	background-color: transparent;
+
+	padding: 10px 16px;
+	border: none;
+
+	font-size: 15px;
+}
+
+#visitor-section .text-wrap .input-wrap input:focus {
+	outline: none;
+}
+
+#visitor-section .text-wrap .input-wrap button {
+
+	width: 40px;
+	height: 100%;
+	background-color: transparent;
+	background-size: 20px 20px;
+	background-image: url(../img/search.png);
+	background-repeat: no-repeat;
+    background-position: center;
+}
+
+#visitor-section .text-wrap .input-wrap button:hover {
+	cursor: pointer;
 }
 
 
 
+
+
+/* 인기 게임 라운지 */
+.rank-section .right-section-body {
+
+} 
+
+.rank-section .right-section-body ol {
+
+}
+
+.rank-section .right-section-body li {
+	margin-bottom: 16px;
+}
+
+.rank-section .right-section-body li:after {
+	display: inline-block;
+	content: "";
+	width: 14px;
+	height: 14px;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAj9JREFUSA3tlUtrFEEQgKt6YzYxbIgHyUZFIvEBhoiHJRdPc1F2Th5kMHoxK4oIkphfsH8hEokS2ckas9G5imOIj4PgQRGEgCKGoCB4zEUDk5neLrtDBoZls9MzPi6mYejuqer6uqqrugF22n8TAdd1s3/CWaZjpDq/OPx9jSbv1dyzOvqtdLSAgYA1RCQkKFYW3HOtDMbJME4hlNvO0sl6wK/KBRlk8LI0Yj4KZUl6baAyajvPhgTn14CoTU5flS4Ua8rzvwZUhiuOe5wCvA5Au+T09beVtw/K5bLQhWqdYdRYyTI/MmRTMqy+/H/qwOHhS0SkbSdRSKNge37piEB+Awiy8nuXa/9ZsSyrHtVpNtbeWePi0YunVzIMJgHQA4TCD7/riuNQplGvcZ7aw9CQvfC0nwSNy8zplMm0nGtfv9PK09QehsDRkeJXwaC6OUc84Yk9R0NZs/63gTJr98orwdoCfulg+1abgcJ/qp5St1rtea/H/QkZyh5EWMW+jluWMaiyd9uWGjg3t9jnkT8hz65bJs3nfA9MmYaxsS1pS5AKWHVe7Pf5xk1ZDjkC+tTd1n/bNFt7Fm4kMfC+8/igH3jjCNiFQB/4sd5pqzAYhAbj+kRAVQIBpzFZS7uBseVD+exdo1DgcZCoXBs4+9AdEILUzdIJjN7nMmdmDANjb5YoTI21ykKdWV3AGG3C5DWWWZ+xrOQwBdTyMAj4gAxjVgLfXD5fnJVPkvbroCCJm3wN0Hae5BMv3FnwLyLwC4AbuzdUWWJYAAAAAElFTkSuQmCC);
+;
+
+	background-size: 14px;
+}
+
+.rank-section .right-section-body li:last-child {
+	margin-bottom: 0;
+}
+
+.rank-section .right-section-body li .count-wrap {
+	position: relative;
+	width: 25px;
+	text-align: center;
+
+	margin-right: 5px;
+}
+
+.rank-section .right-section-body li .count-wrap .count {
+	font-size: 17px;
+	font-weight: 700;
+}
+
+.rank-section .right-section-body .count-wrap .up-and-down-wrap {
+	position: absolute;
+	
+	left: 6px;
+	bottom: -13px;
+
+	border-radius: 20px;
+}
+
+.rank-section .right-section-body .count-wrap .up-and-down-wrap .equal {
+	width: 5px;
+	height: 3px;
+	background-color: gray;
+	display: inline-block;
+
+	margin-left: 4px;
+}
+
+.rank-section .right-section-body .count-wrap .up-and-down-wrap .up {
+	color: red;
+}
+
+.rank-section .right-section-body .count-wrap .up-and-down-wrap .up:before {
+	background-color: red;
+}
+
+.rank-section .right-section-body .count-wrap .up-and-down-wrap span {
+	font-size: 10px;
+}
+
+.rank-section .right-section-body .count-wrap .up-and-down-wrap span:before {
+	display: inline-block;
+	position: relative;
+
+	content: "";
+	width: 7px;
+	height: 3px;
+	background-color: red;
+
+	top: -2x;
+	margin-right: 1px;
+}
+
+.rank-section .right-section-body .count-wrap .up-and-down-wrap .down {
+
+}
+
+.rank-section .right-section-body .image-wrap {
+	position: relative;
+	width: 55px;
+	height: 55px;
+
+	margin-right: 5px;
+
+}
+
+.rank-section .right-section-body .image-wrap img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 12px;
+}
+
+.rank-section .right-section-body .image-wrap .chk {
+	position: absolute;
+	width: 21px;
+	height: 21px;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAKqADAAQAAAABAAAAKgAAAADUGqULAAAESklEQVRYCc2ZPWhVSRTHz32KLiRoGhvdmLxGyeJHIiy4mE7QLopFttEIwm6lYONHo0Vs3N1CZLdaQTDaaCGaTsFOUVgw8QPFxphktdEiioIKev3/5t15GfM+8u7Nx7sHzr1zZ+7M+b0zc+fjvMjmIHEcb1T1PulP0tWBKmmvAn2i9HAURY8oWBQBTnpG+lyaVqhDXX5gKokafVuNr9W7p6R7pQXqvXtn9lS+GhsrpXlGkRUrprVYNOuSz8lL5Kvul6Qn5OUJn1nvPiuoAJepgUHpYenyL18svnfXotFRs8nJek1XlrW3m3V3m239xeIlSwzbH6VnpScF/LmyxnROXVBBrtKrV6W9cWzxyIhFN2+YTU1NN5Al1dZmtmOnWU+PxVHkgG+rnT2CfV2rvZqggtykSsPSjrdTFg8NWfTyZa1msuWvWWM2MGDxyjYHO65W+gT7sFprVUETyDuq0PrihdnFIbMPH6pVn3teS4vZvgGzzk7X1ntdt1WDrQBNuvs/Veh4oHF45YqZxuWCisar9febbdb4leDZn2cOA/f1umJdBMmHw5jswJOLASlbzhHYwqakQ3o1YXEZXL4D1TPTTy9jku5eaE8C4AVb2MS28nqlg76Me7nr9QuYJ5/p617+z9/z/+GERuul+cAOHnKzwSe9t15DYIL3C0ElvPkDU9B8f92BjVmT2IYBFilMTpxH5U2WtFG5P/rrT4uyzpMb1Mru3aWGr10ze5xxZWeePXLULQoMg2559ZH36AFlFFhxskKCB2Rra0k9MPlpBQZYVA8+2Mpdv4uHkVGu2QVIL2Ha56W5s0Qn4tgK6nZWoCKbif8nfVnz7+wjkg1OEUZc2wcWu6C8ScDUB2gXgGzV8iYBUxeg7My9m3PF6ve2MC7lAl2QyWNN8VNQIx/L6T8qm3mvbUejU1fAtDq1R/0UVInQWA4/sNGpayZoYxaa/BYe5bQYnmfqItFtdF9W8V3fSP3gjPWKMQroOjLfvJm9OstiraVx5pg8fmz29uq9EYKm9mi9hue7bCboUwwUi/NtZu7tBUxP8Oh1muTcnTcJmIYLbKEEOIabOXfnRWBJun4s3OY5rxIcmIuEs0GYztJmwOLY6HrkvPQrEQw2rVnFT11ppqBqtmCARWWEfmBzm1PunEAv6DZw/75On5ddVtMu/b+abdnizA+p2/eT8h4lfUL6iTALB6xmCbZhkH3iUjA5KYOKfEI5Z4kFEWYhgrHYgk1sJ/EosZROoHC4w50HUvcTgLgl7SUYcO7fxTvbEy357XfzoR2CZtsFWo7wlT2qAksK9ig53tlZCrPQwEKLD+lgUzIuJbJXhiTzO4+SgSTnqHwHyUqoZdhhPec37BjA5j+QG8DygQ1KD0vLoXFiAGmP1z9qWezpXoDQuIflrnFLEO2UtCl/NsCQSgSc779vqv2aZHYggEFsgNOsV17n5OCVPS9/iD2kIIt8AwmmF/MhmttwAAAAAElFTkSuQmCC););
+	background-size: 21px;
+
+	top: -2px;
+	right: -2px;
+}
+
+.rank-section .right-section-body .txt-wrap {
+
+}
+
+.rank-section .right-section-body .txt-wrap h3 {
+	font-size: 15px;
+	width: 182px;
+
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+
+	margin-right: 10px;
+}
+
+.rank-section .right-section-body .txt-wrap .genre {
+	font-size: 13px;
+	color: #999;
+}
+
+.rank-section .right-section-body .time {
+	margin-top: 12px;
+
+	font-size: 13px;
+	color: #999;
+}
+
+
+
+
+/* e스포츠 주요뉴스 */
+#news-section .right-section-body ul {
+
+}
+
+#news-section .right-section-body ul li {
+	margin-bottom: 10px;
+	padding-right: 5px;
+
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+
+	font-size: 15px;
+	line-height: 19px;
+	letter-spacing: -.3px;
+}
+
+#news-section .right-section-body ul li:last-child {
+	margin-bottom: 0;
+}
+
+#news-section .right-section-body ul a:before {
+	display: inline-block;
+	content: "";
+	width: 3px;
+	height: 3px;
+	border-radius: 50%;
+	background-color: #9da5b6;
+
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+#news-section .right-section-body ul a.on {
+	font-weight: 500;
+}
+
+
+
+
+/* 이번 주 신생 라운지 */
+#week-section li {
+	margin-bottom: 16px;
+} 
+
+#week-section li:last-child {
+	margin-bottom: 0;
+}
+
+#week-section li a:after {
+	display: inline-block;
+	content: "";
+	width: 14px;
+	height: 14px;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAj9JREFUSA3tlUtrFEEQgKt6YzYxbIgHyUZFIvEBhoiHJRdPc1F2Th5kMHoxK4oIkphfsH8hEokS2ckas9G5imOIj4PgQRGEgCKGoCB4zEUDk5neLrtDBoZls9MzPi6mYejuqer6uqqrugF22n8TAdd1s3/CWaZjpDq/OPx9jSbv1dyzOvqtdLSAgYA1RCQkKFYW3HOtDMbJME4hlNvO0sl6wK/KBRlk8LI0Yj4KZUl6baAyajvPhgTn14CoTU5flS4Ua8rzvwZUhiuOe5wCvA5Au+T09beVtw/K5bLQhWqdYdRYyTI/MmRTMqy+/H/qwOHhS0SkbSdRSKNge37piEB+Awiy8nuXa/9ZsSyrHtVpNtbeWePi0YunVzIMJgHQA4TCD7/riuNQplGvcZ7aw9CQvfC0nwSNy8zplMm0nGtfv9PK09QehsDRkeJXwaC6OUc84Yk9R0NZs/63gTJr98orwdoCfulg+1abgcJ/qp5St1rtea/H/QkZyh5EWMW+jluWMaiyd9uWGjg3t9jnkT8hz65bJs3nfA9MmYaxsS1pS5AKWHVe7Pf5xk1ZDjkC+tTd1n/bNFt7Fm4kMfC+8/igH3jjCNiFQB/4sd5pqzAYhAbj+kRAVQIBpzFZS7uBseVD+exdo1DgcZCoXBs4+9AdEILUzdIJjN7nMmdmDANjb5YoTI21ykKdWV3AGG3C5DWWWZ+xrOQwBdTyMAj4gAxjVgLfXD5fnJVPkvbroCCJm3wN0Hae5BMv3FnwLyLwC4AbuzdUWWJYAAAAAElFTkSuQmCC);;
+	background-repeat: no-repeat;
+	background-size: 14px 14px;
+}
+
+#week-section img {
+	width: 128px;
+	height: 72px;
+	border-radius: 8px;
+
+	margin-right: 10px;
+}
+
+#week-section .txt-wrap {
+	width: 145px;
+}
+
+#week-section h3 {
+	font-size: 15px;
+}
+
+#week-section span {
+	font-size: 13px;
+	color: #999;
+}
+
+
+
+
+#game-right-banner {
+	width: 100%;
+	height: 200px;
+	border-radius: 12px;
+	overflow: hidden;
+
+	margin-bottom: 20px;
+}
+
+
+
+#game-footer-section {
+
+}
+
+#game-footer-section a {
+	font-size: 12px;
+	color: #666;
+}
+
+#game-footer-section a:after {
+	display: inline-block;
+	content: "";
+	width: 1px;
+	height: 11px;
+	margin: 6px 10px 0;
+	background-color: #ddd;
+	vertical-align: top;
+}
+
+#game-footer-section a:last-child:after {
+	content: none;
+} 
+
+#game-footer-section a.on {
+	font-weight: 700;
+}
