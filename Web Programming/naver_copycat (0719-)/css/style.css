@@ -6419,3 +6419,336 @@ body {
 #game-footer-section a.on {
 	font-weight: 700;
 }
+
+
+
+
+
+/* e-sport.html */
+#game-body {
+	font-family: -apple-system,BlinkMacSystemFont,Apple SD Gothic Neo,Helvetica,Arial,NanumGothic,나눔고딕,Malgun Gothic,맑은 고딕,Dotum,굴림,gulim,새굴림,noto sans,돋움,sans-serif;
+}
+
+.esport-flex-between {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;	
+}
+
+.esport-flex-start {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;	
+}
+
+.esport-flex-center {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;	
+}
+
+.esport-flex-end {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;	
+}
+
+.esport-container {
+	width: 1280px;
+	margin: 0 auto;
+}
+
+/*---------------------------------> 디폴트값*/
+
+/* 상단영역 */
+#esport-header {
+	position: fixed;
+	width: 100%;
+	background-color: #151618;
+	border-bottom: solid 1px gray;
+
+
+	left: 0;
+	top: 0;
+
+	z-index: 999;
+}
+
+#esport-header #esport-nav {
+	/*height: 60px;*/
+}
+
+#esport-header #esport-nav a {
+	color: #ffffff;
+}
+
+#esport-header #esport-nav .nav-wrap {
+	height: 60px;
+}
+
+#esport-header #esport-nav .left h1 {
+	font-size: 20px;
+}
+
+#esport-header #esport-nav .left h1 a.logo {
+	font-size: 15px;
+	font-weight: 800;
+}
+
+#esport-header #esport-nav .left h1 a.logo-2 {
+	margin-left: 5px;
+}
+
+#esport-header #esport-nav .left li:before {
+	display: inline-block;
+	content: "";
+	width: 1px;
+	height: 14px;
+	background-color: rgba(160, 165, 182, .3);
+	margin: 0 12px;
+}
+
+#esport-header #esport-nav .left li a {
+	color: gray;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+#esport-header #esport-nav .left li a:hover {
+	background-color: rgba(62, 69, 81, 0.5);
+	border-radius: 5px;
+}
+
+
+
+#esport-header #esport-nav .center li {
+	margin-right: 24px;
+}
+
+#esport-header #esport-nav .center li:last-child {
+
+}
+
+#esport-header #esport-nav .center li a {
+	display: inline-block;
+	height: 60px;
+
+	line-height: 60px;
+	border-bottom: solid 5px transparent;
+	padding: 0 5px;
+
+	color: gray;
+	font-size: 17px;
+	font-weight: 500;
+} 
+
+#esport-header #esport-nav .center li a:hover {
+	color: darkgray;
+}
+
+#esport-header #esport-nav .center li a.active {
+	color: #ffffff;
+	border-bottom: solid 5px #ffffff;
+}
+
+
+
+#esport-header #esport-nav .right a.btn-login {
+	border: solid 1px hsla(0, 0%, 80%, .3);
+	border-radius: 8px;
+
+	padding: 8px 11px;
+
+	font-size: 12px;
+	font-weight: bold;
+
+}
+
+#esport-header #esport-nav .right a.menu {
+	width: 40px;
+	height: 40px;
+	background-image: url(../img/menu-2.png);
+	background-size: 20px 20px;
+	background-position: 50%;
+	background-repeat: no-repeat;
+
+	margin-left: 10px;
+}
+
+
+
+/* 메인영역 */
+/* 메인 상단 */
+#esport-main {
+	padding-top: 61px;
+}
+
+#esport-main #esport-main-top {
+	background-color: #151618;
+}
+
+#esport-main-top .timeline-wrap {
+	padding: 20px 0;
+}
+
+#esport-main-top .timeline-wrap ul {
+
+}
+
+#esport-main-top .timeline-wrap li {
+	width: 16.5%;   /* 100% / 6 */
+	background-color: #272b31;
+	margin-right: 1px;
+
+}
+
+#esport-main-top .timeline-wrap li a {
+	display: block;
+	width: 100%;
+	padding: 14px 18px;
+	color: #ffffff;
+}
+
+#esport-main-top .timeline-wrap li:first-child {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+#esport-main-top .timeline-wrap li:last-child {
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+} 
+
+#esport-main-top .timeline-wrap li a .date {
+	font-size: 12px;
+	font-weight: 500;
+}
+
+#esport-main-top .timeline-wrap li a h2 {
+	font-size: 13px;
+	margin-top: 6px;
+	color: #a0a5b6;
+}
+
+#esport-main-top .timeline-wrap li a h2:hover {
+	text-decoration: underline;
+}
+
+#esport-main-top .timeline-wrap .status-wrap {
+	margin-top: 35px;
+}
+
+#esport-main-top .timeline-wrap .status-wrap .live {
+	font-size: 12px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+#esport-main-top .timeline-wrap .status-wrap .status {
+	font-size: 12px;
+	font-weight: 500;
+	color: red;
+}
+
+
+
+/* 메인-'라이브중인 경기' */
+#esport-main-top .live-wrap {
+	padding-bottom: 60px;
+}
+
+#esport-main-top .live-wrap h2 {
+	font-size: 18px;
+	color: #ffffff;
+	margin-bottom: 20px;
+}
+
+#esport-main-top .live-wrap h2 .count {
+	color: #8a7cff;
+}
+
+#esport-main-top .live-wrap ul {
+
+}
+
+#esport-main-top .live-wrap ul li {
+	overflow: hidden;
+    width: 625px;
+    background-color: #1f2227;
+    border-radius: 10px;
+}
+
+#esport-main-top .live-wrap ul li a {
+/*	display: block;
+	width: 100%;
+	height: 100%;*/
+	align-items: flex-start;
+}
+
+#esport-main-top .live-wrap ul li a .image-wrap {
+	position: relative;
+	width: 442px;
+	height: 250px;
+	overflow: hidden;
+}
+
+#esport-main-top .live-wrap ul li a .image-wrap img {
+	position: absolute;
+    width: 442px;
+    height: 250px;
+    transition: transform 0.4s linear;
+    
+}
+
+#esport-main-top .live-wrap ul li a .image-wrap img:hover {
+	transform: scale(1.3);
+
+}
+
+#esport-main-top .live-wrap ul li a .image-wrap .live-info {
+	position: absolute;
+
+	top: 10px;
+	left: 10px;
+
+	font-size: 13px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+#esport-main-top .live-wrap ul li a .image-wrap .live-info .live {
+	background-color: red;
+	border-radius: 4px;
+	padding: 2px 4px;
+}
+
+#esport-main-top .live-wrap ul li a .image-wrap .live-info .view-count {
+	background-color: #151618;
+	border-radius: 4px;
+	padding: 2px 4px;
+}
+
+#esport-main-top .live-wrap li .txt-wrap {
+	width: 183px;
+	height: 100%;
+	padding: 17px 20px 22px;
+}
+
+#esport-main-top .live-wrap li .txt-wrap span {
+	color: red;
+	background-color: rgba(255, 0, 0, 0.2);
+	padding: 3px 7px;
+	border-radius: 3px;
+}
+
+#esport-main-top .live-wrap li .txt-wrap h3 {
+	font-size: 15px;
+	color: #ffffff;
+	margin-top: 8px;
+}
+
+
