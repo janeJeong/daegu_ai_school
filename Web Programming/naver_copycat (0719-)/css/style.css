@@ -5300,12 +5300,9 @@ main #blog_wrap .blog_media_wrap ul .blog_media_info span {
 /*--------------------------------------------------------> 초기화 작업*/
 
 /* GAME 상단 영역 */
-body {
-	min-width: 1300px;
-}
-
 #game-body {
 	background-color: rgba(0, 0, 0, 0.02);
+	min-width: 1300px;
 }
 
 #game-header {
@@ -7580,6 +7577,7 @@ body {
 #audio-header {
 	position: fixed;
 	width: 100%;
+	height: 61px;
 	background-color: #ffffff;
 	border-bottom: solid 1px #efeff4;
 
@@ -7640,7 +7638,7 @@ body {
 
 	left: -4.5px;
 	right: -5.5px;
-	bottom: -17px;
+	bottom: -22px;
 }
 
 #audio-header .audio-nav-left li a span:hover {
@@ -7702,5 +7700,541 @@ body {
 
 
 /* 메인 영역 */
+#audio-main {
+	width: 100%;
+	height: 2000px;
+	background-color: #f6f8fa;
+
+	padding-top: 61px;
+
+	font-family: Roboto,NotosansKR,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Helvetica Neue",Helvetica,Arial,"Malgun Gothic","ë§‘ì€ ê³ ë”•",Dotum,"ë‹ì›€",sans-serif;;
+}
+
+#audio-main .audio-container {
+	/*overflow: hidden;*/
+	align-items: flex-start;
+}
+
+/* 섹션별 공통 디자인 */
+.audio-section {
+	padding: 32px 0;
+}
+
+.audio-section .audio-header {
+
+}
+
+.audio-section .audio-header h2 {
+	font-size: 22px;
+	font-weight: 500;
+	letter-spacing: -0.8px;
+}
+
+.audio-section .audio-body {
+	position: relative;
+	padding-top: 19px;
+}
+
+
+.audio-section .audio-body .btn-right {
+	position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: #ffffff;
+    border-radius: 50%;
+
+    right: 0;
+	background-image: url(../img/right-arrow.png);
+	background-repeat: no-repeat;
+	background-size: 15px;
+	background-position: 55% 50%;
+
+    box-shadow: 3px 3px 15px -7px rgb(0 0 0 / 72%);
+    -webkit-box-shadow: 3px 3px 15px -7px rgb(0 0 0 / 72%);
+    -moz-box-shadow: 3px 3px 15px -7px rgba(0,0,0,0.72);
+    cursor: pointer;
+
+    right: -17px;
+}
+
+/* 메인 왼쪽 */
+/* 오늘의 오디오 클립 */
+.audio-main-left {
+	float: left;
+	width: 660px;
+}
+
+#audio-today .audio-slide .audio-slide-wrap {
+	width: 100%;
+}
+
+#audio-today .audio-slide {
+	align-items: flex-start;
+}
+
+#audio-today .audio-slide img {
+	width: 380px;
+	height: 198px;
+
+	margin-right: 20px;
+	border-radius: 8px;
+}
+
+#audio-today .audio-slide .txt-wrap {
+	width: 240px;
+}
+
+#audio-today .audio-slide .txt-wrap h3 {
+	display: -webkit-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-webkit-line-clamp:  2;
+	-webkit-box-orient: vertical;
+	max-height: 52px;
+
+	padding-top: 2px;
+
+	font-size: 18px;
+	font-weight: 500;
+
+}
+
+#audio-today .audio-slide .txt-wrap p {
+	display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+	margin-top: 12px;
+	font-size: 12px;
+	color: #666;
+}
+
+#audio-today .audio-slide-wrap {
+	position: relative;
+}
+
+#audio-today .audio-slide-wrap .btn {
+	position: absolute;
+
+	width: 35px;
+	height: 35px;
+	background-color: #ffffff;
+	border-radius: 50%;
+
+	box-shadow: 3px 3px 15px -7px rgba(0,0,0,0.72);
+	-webkit-box-shadow: 3px 3px 15px -7px rgba(0,0,0,0.72);
+	-moz-box-shadow: 3px 3px 15px -7px rgba(0,0,0,0.72);
+
+	top: 80px;
+
+	cursor: pointer;
+}
+
+#audio-today .audio-slide-wrap .btn-left {
+	left: -17px;
+	background-image: url(../img/left-arrow.png);
+	background-repeat: no-repeat;
+	background-size: 15px;
+	background-position: 43%;
+}
+
+#audio-today .audio-slide-wrap .btn-right {
+	right: 0;
+	background-image: url(../img/right-arrow.png);
+	background-repeat: no-repeat;
+	background-size: 15px;
+	background-position: 55% 50%;
+}
+
+
+/* 오디오클립 추천 오리지널 */
+#audio-original {
+
+}
+
+#audio-original .audio-body {
+
+}
+
+#audio-original .audio-body ul {
+	align-items: flex-start;
+}
+
+#audio-original .audio-body ul li {
+	width: 120px;
+}
+
+#audio-original .audio-body li a {
+
+}
+
+#audio-original .audio-body li img {
+	width: 120px;
+	height: 120px;
+	border-radius: 4px;
+}
+
+#audio-original .audio-body h3 {
+	margin-top: 10px;
+	font-size: 13px;
+
+	display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    max-height: 36px;
+}
+
+#audio-original .audio-body .author {
+	margin-top: 6px;
+
+	font-size: 12px;
+	color: #959595;
+}
+
+#audio-original .audio-body .btn-right {
+	top: 60px;
+}
+
+
+
+/* 나를 위한 플레이리스트 */
+#audio-playlist {
+
+}
+
+#audio-playlist .audio-header {
+	position: relative;
+}
+
+#audio-playlist .audio-header h2 {
+
+}
+
+#audio-playlist .audio-header p {
+	margin-top: 8px;
+
+	font-size: 13px;
+	font-weight: 400;
+	color: #888;
+}
+
+#audio-playlist .audio-header .link-total {
+	display: block;
+	position: absolute;
+
+	padding: 10px 18px 8px;
+	background-color: #ffffff;
+
+	font-size: 13px;
+	color: #157efb;
+	font-weight: 500;
+	border: solid 1px rgba(0, 0, 0, .1);
+	border-radius: 20px;
+	box-shadow: 0 2px 10px 0 rgb(80 85 91 / 7%);
+
+	right: 0;
+	top: 6px;
+}
+
+#audio-playlist .audio-body {
+
+}
+
+#audio-playlist .audio-body ul {
+	align-items: flex-start;
+}
+
+#audio-playlist .audio-body li {
+	width: 152px;
+	border: solid 1px rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+}
+
+#audio-playlist .audio-body li .image-wrap {
+	position: relative;
+	width: 150px;
+	height: 150px;
+}
+
+
+#audio-playlist .audio-body .image-wrap img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 4px 4px 0 0;
+}
+
+#audio-playlist .audio-body .image-wrap .icon-like {
+	position: absolute;
+	width: 20px;
+	height: 17px;
+	background-image: url(../img/heart.png);
+	background-size: 17px 17px;
+	background-repeat: no-repeat;
+
+	top: 5px;
+	right: 5px;
+}
+
+#audio-playlist .audio-body .image-wrap .icon-play {
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	background-image: url(../img/play.png);
+	background-size: 14px;
+	background-repeat: no-repeat;
+	background-position: 55% 50%;
+	background-color: rgba(255, 255, 255, .8);
+	border-radius: 50%;
+
+	box-shadow: 2px 2px 7px -2px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 2px 2px 7px -2px rgba(0,0,0,0.5);
+	-moz-box-shadow: 2px 2px 7px -2px rgba(0,0,0,0.5);
+
+	bottom: -16px;
+	right: 10px;
+}
+
+#audio-playlist .audio-body li h3 {
+	padding: 17px 11px;
+	font-size: 13px;
+	background-color: #ffffff;
+	border-radius: 0 0 4px 4px;
+}
+
+#audio-playlist .audio-body .btn-right {
+	top: 90px;
+}
+
+
+/* 라이브 ON */
+#audio-live {
+
+}
+
+#audio-live .audio-body {
+
+}
+
+#audio-live .audio-body ul {
+	align-items: flex-start;
+}
+
+#audio-live .audio-body li {
+	width: 120px;
+}
+
+#audio-live .audio-body li .image-wrap {
+	position: relative;
+	width: 120px;
+	height: 120px;
+	border: solid 2px #E1E3E4;
+	border-radius: 50%;
+}
+
+#audio-live .audio-body li.active .image-wrap {
+	border: solid 2px #ff0031;
+}
+
+#audio-live .audio-body li .image-wrap img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: solid 2px #f6f8fa;
+	border-radius: 50%
+}
+
+#audio-live .audio-body li .image-wrap .live-state {
+	position: absolute;
+	padding: 2px;
+	border: solid 1px #ffffff;
+	background-color: #ffffff;
+	border-radius: 3px;
+
+	bottom: -15px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#audio-live .audio-body li .image-wrap .live-state .live {
+	display: inline-block;
+	padding: 2px 4px;
+	color: #FF0031;
+	border: solid 1.5px #FF0031;
+	background-color: #ffffff;
+	border-radius: 3px;
+
+	font-size: 12px;
+	font-weight: bold;
+	vertical-align: middle;
+}
+
+#audio-live .audio-body li.active .image-wrap .live-state .live {
+	background-color: #FF0031;
+	color: #ffffff;
+}
+
+#audio-live .audio-body li h3 {
+	margin-top: 16px;
+	font-size: 13px;
+}
+
+#audio-live .audio-body li .author {
+	font-size: 6px;
+	font-size: 12px;
+	color: #959595;
+}
+
+#audio-live .audio-body .btn-right {
+	top: 60px
+}
+
+
+
+
+/* 셀럽들의 목소리로 듣는 베스트셀러 */
+#audio-book {
+
+}
+
+#audio-book .audio-body {
+
+}
+
+#audio-book .audio-body ul {
+	align-items: flex-start;
+}
+
+#audio-book .audio-body ul li {
+	width: 120px;
+}
+
+#audio-book .audio-body .image-wrap {
+	position: relative;
+	width: 100%;
+}
+
+#audio-book .audio-body .image-wrap img  {
+/*	position: absolute;*/
+	width: 100%;
+	border-radius: 2px;
+}
+
+#audio-book .audio-body .image-wrap .status {
+	position: absolute;	
+	padding: 2px 5px;
+	background-color: rgba(17, 17, 17, .75);
+
+	font-size: 11px;
+	color: #ffffff;
+
+	top: 5px;
+	left: 5px;
+}
+
+#audio-book .audio-body .image-wrap .time {
+	position: absolute;
+
+	padding: 2px 5px;
+	background-color: rgba(17, 17, 17, .75);
+
+	font-size: 11px;
+	color: #ffffff;
+
+	right: 5px;
+	bottom: 5px;
+}
+
+#audio-book .audio-body li h3 {
+	font-size: 13px;
+	margin-top: 11px;
+
+	display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    max-height: 36px;
+}
+
+#audio-book .audio-body .author-1 {
+	display: block;
+	margin-top: 4px;
+
+	font-size: 12px;
+	color: #959595;
+}
+
+#audio-book .audio-body .author-2 {
+	display: block;
+
+	font-size: 12px;
+	color: #959595;
+}
+
+#audio-book .audio-body .price {
+	display: block;
+	margin-top: 4px;
+
+	font-size: 12px;
+	font-weight: 500;
+}
+
+#audio-book .audio-body .btn-right {
+	top: 85px;
+}
+
+/* 새로 나온 채널 */
+#audio-channel .audio-body ul {
+	align-items: flex-start;
+}
+
+#audio-channel .audio-body ul li {
+	width: 120px;
+}
+
+#audio-channel .audio-body li a {
+
+}
+
+#audio-channel .audio-body li img {
+	width: 120px;
+	height: 120px;
+	border-radius: 4px;
+}
+
+#audio-channel .audio-body h3 {
+	margin-top: 10px;
+	font-size: 13px;
+
+	display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    max-height: 36px;
+}
+
+#audio-channel .audio-body .author {
+	margin-top: 6px;
+
+	font-size: 12px;
+	color: #959595;
+}
+
+#audio-channel .audio-body .btn-right {
+	top: 60px;
+}
+
+
+
+.audio-main-right {
+	float: right;
+	width: 330px;
+}
 
 
