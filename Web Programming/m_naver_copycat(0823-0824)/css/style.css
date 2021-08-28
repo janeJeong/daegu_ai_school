@@ -1,0 +1,745 @@
+/* 초기화 작업 */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+}
+
+input {
+	border: none;
+	background-color: transparent;
+}
+
+input:focus {
+	outline: none;
+}
+
+
+/* 모바일 크기 지정 */
+.wrapper {
+	overflow-x: hidden;
+	overflow-y: auto;  /* 해당 영역을 벗어나면 스크롤이 생기고, 그렇지 않으면 스크롤이 생기지 않음 */
+
+	width: 375px;
+	height: 100vh; /* viewport height - 기기 화면의 높이 값을 기준으로 맞추겠다 */
+	background-color: #eaeef3;
+
+	margin: 0 auto;
+}
+
+
+
+/* 메인 상단 네비게이션 */
+#main-nav {
+	overflow: hidden;
+	background-color: rgb(7, 189, 120);
+	border-top: solid 1px #4dba8c;
+	border-bottom: solid 1px #4dba8c;
+}   
+
+#main-nav ul {
+	overflow-x: auto;
+
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+
+	white-space: nowrap;
+} 
+
+#main-nav ul {
+	-ms-overflow-style: none;   /* ms : explore, edge 브라우저에 영향을 미치는 prefix*/
+	scrollbar-width: none;	/* firefox에서 사용 가능한 css*/
+}
+
+#main-nav ul::-webkit-scrollbar {
+	display: none;  /* -webkit-scrollbar : 가상 선택자 => 위의 세 가지의 코드는 스크롤바에 영향을 미치는 css 속성*/
+}					/* -webkit- : chrom, safari, opera 브라우저에서 사용하는 가상선택자 */
+
+#main-nav ul li {
+	height: 54px;
+	padding: 0 10px;
+
+	text-align: center;
+}
+
+#main-nav ul li a {
+	display: block;
+	height: 100%;
+
+	line-height: 54px;
+	font-weight: 600;
+	letter-spacing: -1px;
+
+	color: rgb(141, 223, 183);
+	border-bottom: solid 3px transparent;
+}
+
+#main-nav ul li.on a {
+	color: #ffffff;	
+	border-bottom: solid 3px rgba(255,255,255,.75);
+}
+
+
+
+/* 상단 헤더 */
+#header {
+	background-color: #f4f6f8;
+	padding: 120px 0 80px;
+}
+
+#header .search-wrap {
+	overflow: hidden;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch;
+
+	position: relative;
+	width: 333px;
+	height: 52px;
+	border: solid 1.5px rgb(7, 189, 120);
+	border-radius: 25px;
+	background-color: #ffffff;
+	box-shadow: 0 5px 10px 0 rgb(117 145 181 / 12%);
+
+	margin: 0 auto 24px;
+}
+
+#header .search-wrap .link-logo {
+	display: block;
+	width: 42px;
+	height: 42px;
+	margin-left: 10px;
+
+	background-image: url(../img/logo.png);
+	background-repeat: no-repeat;
+	background-size: 30px 25px;
+	background-position: center;
+}
+
+#header .search-wrap input {
+	width: calc(100% - 78px);
+	height: 22px;
+
+	font-size: 17px;
+	font-weight: 600;
+
+	padding: 0 10px;
+}
+
+#header .search-wrap input::placeholder {
+	color: #c8ced1;
+}
+
+#header .search-wrap .link-voice {
+	display: block;
+	width: 36px;
+	height: 36px;
+	margin-right: 10px;
+
+	background-image: url(../img/voice.png);
+	background-repeat: no-repeat;
+	background-size: 35px 30px;
+	background-position: center;
+}
+
+#header .header-nav {
+	width: 316px;
+	margin: 0 auto;
+}
+
+#header .header-nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+
+#header .header-nav li {
+	width: 25%;
+	padding-top: 12px;
+}
+
+#header .header-nav a {
+	display: block;
+	width: 100%;
+
+	text-align: center;
+}
+
+#header .header-nav .icon {
+	display: inline-block;
+	width: 44px;
+	height: 44px;
+	border-radius: 15px;
+	border: solid 1px #eeeeee;
+
+	box-shadow: 0 5px 10px 0 rgb(117 145 181 / 12%);
+
+	background-size: 26px;
+	background-color: #ffffff;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#header .header-nav .icon.news {
+	background-image: url(../img/newspaper.png);
+}
+
+#header .header-nav .icon.shopping {
+	background-image: url(../img/shop.png);
+}
+
+#header .header-nav .icon.table {
+	background-image: url(../img/table.png);
+}
+
+#header .header-nav .icon.star {
+	background-image: url(../img/star.png);
+}
+
+#header .header-nav .icon.more {
+	background-image: url(../img/more.png);
+}
+
+#header .header-nav .icon-green {
+	display: inline-block;
+	width: 44px;
+	height: 44px;
+	border-radius: 15px;
+	border: solid 1px #eeeeee;
+
+	box-shadow: 0 5px 10px 0 rgb(117 145 181 / 12%);
+
+	background-size: 30px;
+	background-color: #ffffff;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #06d363;
+}
+
+#header .header-nav .icon-green.mail {
+	background-image: url(../img/mail.png);
+}
+
+#header .header-nav .icon-green.cafe {
+	background-image: url(../img/cafe.png);
+}
+
+#header .header-nav .icon-green.blog {
+	background-image: url(../img/blog.png);
+}
+
+#header .header-nav span {
+	display: block;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /*margin-top: 5px;*/
+
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: -.55px;
+    color: #1e1e23;
+}
+
+
+
+/* 배너 */
+#banner-1 {
+	background-color: #f6f4f8;
+}
+
+#banner-1 .banner-wrap {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#banner-1 .banner-wrap img {
+	width: 100%;
+}
+
+
+
+/* 일기예보 */
+#weather {
+	background-color: #ffffff;
+}
+
+.container {
+	padding: 0 20px;
+}
+
+#weather .weather-top {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+
+	padding: 22px 0 16px;
+}
+
+#weather .weather-top .weather-left {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+}
+
+#weather .weather-top .weather-left img {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+
+	margin-right: 15px;
+}
+
+#weather .weather-top .weather-left .txt-wrap {
+
+}
+
+#weather .weather-top .weather-left .txt-wrap h3 {
+	font-size: 16px;
+	color: #303038;
+}
+
+#weather .weather-top .weather-left .txt-wrap p {
+	font-weight: 500;
+	font-size: 14px;
+	color: #303038;
+}
+
+#weather .weather-top .weather-left .txt-wrap p .good {
+	color: #00a8ff;
+}
+
+#weather .weather-top .weather-left .txt-wrap p .middle {
+	color: #00d01d
+}
+
+#weather .weather-top .weather-right {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+	align-content: center;
+}
+
+#weather .weather-top .weather-right span {
+	font-size: 14px;
+	color: #767678;
+
+	margin-right: 8px;
+}
+
+#weather .weather-top .weather-right .icon {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-color: #56aff6;
+	border-radius: 50%;
+}
+
+#weather .weather-bottom {
+	padding: 6px 0 30px;
+}
+
+#weather .weather-bottom p {
+	color: #767678;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 20px;
+	letter-spacing: -.5px;
+
+	text-align: center;
+}
+
+
+
+/* NOW. 영역 */
+#now {
+	background-color: #ffffff;
+	padding: 20px 0 16px;
+	margin-top: 10px;
+}
+
+#now h2 {
+	font-size: 18px;
+	font-weight: 700;
+	color: #ff3207;
+
+	margin-bottom: 14px;
+	margin-left: 20px;
+}
+
+#now ul {
+	overflow-x: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+
+	-ms-overflow-style: none; 
+	scrollbar-width: none;
+
+	padding: 0 20px;
+}
+
+#now ul::-webkit-scrollbar {
+	display: none;
+}
+
+#now ul li {
+	margin-right: 10px;
+}
+
+#now ul li:last-child {
+	margin-right: 0;
+}
+
+#now li a {
+	color: #000000;
+	display: block;
+	width: 100px;
+}
+
+#now li a .image-wrap {
+	position: relative;
+	width: 100px;
+	height: 138px;
+	border-radius: 6px;
+}
+
+#now li a .image-wrap img {
+	position: absolute;
+	width: 100%;
+	border-radius: 6px;
+}
+
+#now li a .image-wrap span {
+	position: absolute;
+	width: 32px;
+	height: 16px;
+	background-color: #f4361e;
+    border: 1px solid #f61c00;
+	border-radius: 8px;   
+
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 14px;
+	text-align: center;
+    letter-spacing: normal;
+
+    overflow: hidden;
+    white-space: nowrap;
+
+	top: 8px;
+    left: 8px;
+}
+
+#now li a p {
+	display: -webkit-box;
+    overflow: hidden;
+
+	font-size: 15px;
+	color: #303038;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: -.3px;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    padding: 10px 0 0 2px;
+}
+
+#now .btn-wrap {
+	width: 335px;
+	overflow: hidden;
+	border-radius: 22px;
+	background-color: #f5f8fb;
+
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+	margin: 20px auto 0;
+}
+
+#now .btn-wrap a {
+	display: block;
+	width: 50%;
+	height: 44px;
+	text-align: center;
+	line-height: 44px;
+
+	color: #767678;
+}
+
+#now .btn-wrap .btn-now: {
+	
+}
+
+#now .btn-wrap .btn-shopping:before {
+	float: left;
+	content: "";
+	width: 1px;
+	height: 14px;
+
+	margin-top: 15px;
+	background-color: rgba(125, 127, 133, .2);
+
+	vertical-align: top;
+}
+
+
+
+/* 배너2 */
+#banner-2 {
+	background-color: #ffffff;
+	margin-top: 10px;
+}
+
+#banner-2 .banner-wrap {
+	width: 320px;
+	margin: 0 auto;
+}
+
+#banner-2 .banner-wrap img {
+	width: 100%;
+}
+
+
+/* 배너3 */
+#banner-3 {
+	background-color: #ffffff;
+	margin-top: 10px;
+}
+
+#banner-3 .banner-wrap {
+	width: 320px;
+	margin: 0 auto;
+}
+
+#banner-3 .banner-wrap img {
+	width: 100%;
+}
+
+
+/*배너4*/
+#banner-4 {
+	overflow: hidden;
+	background-color: #ffffff;
+	margin-top: 10px;
+}
+
+#banner-4 .banner-wrap {
+	width: 100%;       /* 해당 배너는 높이를 기준으로 width 값을 잡았기 때문에, width값이 불필요 */
+	height: 155px;
+}
+
+#banner-4 .banner-wrap img {
+	position: relative;
+
+	height: 100%;   /*banner-wrap의 height: 150;에 맞춰 100% 적용*/
+
+	left: 50%;
+	transform: translate(-50%);
+}
+
+
+
+/* 코로나 */
+#corona {
+	background-color: #ffffff;
+	margin-top: 10px;
+}
+
+#corona .container {
+	padding: 0 20px;
+}
+
+#corona .corona-wrap {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+}
+
+#corona .corona-wrap a {
+	position: relative;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+
+	padding: 20px 0;
+}
+
+#corona .corona-wrap a.right-corona {
+	padding-left: 11px;
+}
+
+#corona .corona-wrap a.right-corona:before {
+	display: inline-block;
+	content: "";
+
+	position: absolute;
+	width: 1px;
+	height: 42px;
+	background-color: #efeff0;
+
+	top: 20px;
+	left: 0;
+}
+
+#corona .corona-wrap img {
+	width: 35px;
+	margin-right: 8px;
+	border-radius: 50%;
+}
+
+#corona .corona-wrap .txt-wrap {
+
+}
+
+#corona .corona-wrap .txt-wrap h3 {
+	font-size: 16px;
+	font-weight: 700;
+	color: #303038;
+	line-height: 18px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#corona .corona-wrap .txt-wrap p {
+	font-size: 14px;
+	font-weight: 400;
+	color: #303038;
+	line-height: 18px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+	margin-top: 4px;
+}
+
+
+
+/* 네이버 qr체크인 */
+#qr-checkin {
+	background-color: #ffffff;
+	margin-top: 10px;
+}
+
+#qr-checkin .container {
+	padding: 0 20px;
+}
+
+#qr-checkin .qr-wrap {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: center;
+
+	padding: 20px 0;
+
+}
+
+#qr-checkin .qr-wrap .qr-left {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+}
+
+#qr-checkin .qr-wrap .qr-left img {
+	width: 40px;
+	height: 40px;
+	border-radius: 15px;
+
+	margin-right: 10px;
+}
+
+#qr-checkin .qr-wrap .qr-left .txt-wrap {
+
+}
+
+#qr-checkin .qr-wrap .qr-left .txt-wrap p {
+	font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: -.3px;
+    color: #424242;
+
+}
+
+#qr-checkin .qr-wrap .qr-left .txt-wrap p em {
+	font-style: normal;
+	font-weight: 600;
+}
+
+#qr-checkin .qr-wrap .qr-right {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+	align-content: center;
+}
+
+#qr-checkin .qr-wrap .qr-right span {
+	font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -.5px;
+    color: #03c95b;
+} 
+
+
