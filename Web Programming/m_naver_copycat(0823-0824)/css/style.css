@@ -743,3 +743,276 @@ input:focus {
 } 
 
 
+
+
+/* 이벤트 채널 */
+/* 좌/우 공통 영역 */
+#talk {
+	padding: 20px 0;
+}
+
+#talk ul {
+	overflow: hidden;
+}
+
+#talk ul li {
+	position: relative;
+	width: 277px;
+	background-color: #ffffff;
+	padding: 15px 0 15px;
+	box-shadow: 0 1px 6px 0 rgb(0 0 0 / 6%), 0 1px 0 0 rgb(0 0 0 / 2%);
+
+	margin-bottom: 12px;
+}
+
+#talk ul li:last-child {
+	margin-bottom: 0;
+}
+
+#talk ul li .icon-arrow {
+	display: inline-block;
+	width: 20px;
+	height: 16px;
+}
+
+#talk ul li a {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 0 20px;
+
+	color: #303038;
+}
+
+#talk ul li img {
+	width: 52px;
+	height: 52px;
+	border-radius: 50%;
+	border: 1px solid rgba(0,0,0,.05);
+}
+
+#talk ul .content-wrap .txt-wrap {
+	width: 157px;
+}
+
+#talk ul .content-wrap .txt-wrap h3 {
+	font-size: 14px;
+	font-weight: 600;
+	color: #9761ed;
+	letter-spacing: -.65px;
+}
+
+#talk ul .content-wrap .txt-wrap p {
+	font-size: 13px;
+	line-height: 16px;
+	letter-spacing: -.61px;
+
+	margin-top: 3px;
+}
+
+
+/* 왼쪽 영역에만 해당 */
+#talk ul .left-list {
+	float: left;
+
+	border-top-right-radius: 41px;
+	border-bottom-right-radius: 41px;
+}
+
+#talk ul .left-list .icon-arrow-left {
+	background-color: #9761ed;
+}
+
+#talk ul .left-list .content-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#talk ul .left-list .content-wrap .txt-wrap {
+	text-align: right;
+}
+
+
+#talk ul .left-list .content-wrap img {
+	margin-left: 8px;
+}
+
+
+
+/* 오른쪽 영역에만 해당 */
+#talk ul .right-list {
+	float: right;
+
+	border-top-left-radius: 41px;
+	border-bottom-left-radius: 41px;
+}
+
+#talk ul .right-list .icon-arrow-left {
+	background-color: #0ac666;
+}
+
+#talk ul .right-list .content-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	align-items: center;
+	align-content: center;
+}
+
+#talk ul .right-list .content-wrap .txt-wrap {
+	text-align: left;
+}
+
+#talk ul .right-list .content-wrap .txt-wrap h3 {
+	color: #0ac666;
+}
+
+
+#talk ul .right-list .content-wrap img {
+	margin-right: 5px;
+}
+
+#talk ul .right-list .icon-arrow-right {
+	background-color: #0ac666;
+}
+
+
+
+
+/* 오늘 네이버 */
+#today {
+	padding: 20px 0;
+}
+
+#today.container {
+	padding: 0 20px;
+}
+
+#today .content-header {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+
+	border-top: solid 1px #e0e4ea;
+	padding-top: 24px;
+	margin-bottom: 10px;
+}
+
+#today .content-header h2 {
+	font-size: 17px;
+	font-weight: bold;
+	letter-spacing: -1.8px;
+}
+
+#today .content-header a {
+	color: #767678;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+#today .content-body {
+	overflow: hidden;
+
+	width: 100%;		/* content-header의 width값에 맞춰 들어갈 수 있도록 */ 
+	background-color: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 1px 6px 0 rgb(0 0 0 / 6%), 0 1px 0 0 rgb(0 0 0 / 2%);
+}
+
+#today .content-body .banner {
+	width: 100%;
+}
+
+#today .content-body .bottom-wrap {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+
+	padding: 14px 13px 12px 15px;
+}
+
+#today .content-body .bottom-wrap .icon {
+	display: block;
+	width: 52px;
+	height: 52px;
+	background-color: navy;
+	border-radius: 50%;
+
+	margin-right: 8px;
+}
+
+#today .content-body .bottom-wrap .txt-wrap {
+
+}
+
+#today .content-body .bottom-wrap .txt-wrap h3 {
+	font-size: 15px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: -.5px;
+}
+
+#today .content-body .bottom-wrap .txt-wrap p {
+	margin-top: 3px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -.36px;
+    color: #929294;
+}
+
+
+
+
+/* 하단영역 */
+#footer {
+	padding: 35px 0 80px;
+}
+
+#footer .txt-wrap {
+	text-align: center;
+}
+
+#footer .txt-wrap a {
+	position: relative;
+	display: inline-block;
+    padding: 3px 9px;
+    color: #929294;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -.5px;
+}
+
+#footer .txt-wrap a:before {
+	display: inline-block;
+	position: absolute;
+	content: "";
+
+	top: 7px;
+	left: 0;
+
+	width: 1px;
+	height: 10px;
+	background-color: #d7dfe7;
+}
+
+#footer .txt-wrap .link a:first-child:before {
+	content: none;
+}
+
+#footer h1 {
+	text-align: center;
+}
+
+#footer h1 a {
+	font-size: 20px;
+	font-weight: 900;
+	color: lightgray;
+
+}
