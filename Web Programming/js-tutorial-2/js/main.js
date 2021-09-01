@@ -592,3 +592,53 @@ var arr2 = ["노트북", "마이크", "키보드"];
 var merge = arr1.concat(arr2);  // 어떤 배열을 기준으로 합칠지 정해야 함
 console.log(merge);
 */
+
+
+
+
+
+
+// 실습 1
+var hex = document.getElementById('hex');
+var btn = document.getElementById('btn');  // js에서 조작할 영역 불러오기
+
+// console.log(hex);
+// console.log(btn);
+
+btn.addEventListener('click', createColor);
+
+
+function createColor() {
+	// console.log('Click Here!')
+
+	var arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "a", "b", "c", "d", "e", "f"]
+	var color = '#';
+	// arr 배열 내에서 랜덤한 숫자를 뽑는 변수 생성 (arr의 길이를 곱해줌으로써 램덤 숫자의 범위를 0 ~ arr 데이터 길이 까지로 설정)
+
+	for(var i = 0; i < 6; i++) {
+		var random = Math.floor(Math.random() * arr.length);
+		color += arr[random];
+		 // 6번 반복으로 color값 뽑아내기
+	}
+
+	// console.log(color)
+	// <body>에 color값 적용
+	document.body.style.backgroundColor = color;
+	// #hex 요소 에 글자 삽입
+	hex.textContent = color;
+}
+
+
+// 헥스코드 조합
+// #000fff
+// 숫자 : 0 ~ 9
+// 알파벳 : a ~ f
+// #제외 6글자 숫자와 알파벳 조함
+
+// # + 0 = #0;
+// #0 + f = #0f;
+// #0f + a = #0fa;
+// #0fa + a = #0faa;
+// #0faa + b = #0faab;
+//  #0faab + c = #0faabc;
+

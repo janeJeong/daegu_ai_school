@@ -1,0 +1,10 @@
+/* 사용자에게는 보이지 않게 처리 */
+.feedback {
+	display: none;
+	color: red;
+} 
+
+/* 아무런 값을 입력하지 않은 상태에서 입력 버튼을 누를 경우 작동 */
+.show {
+	display: block;
+}
