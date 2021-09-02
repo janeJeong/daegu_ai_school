@@ -80,6 +80,7 @@ TypeWriter.prototype.type = function() {
 
 
 
+
 	// 분기처리 - 텍스트가 완성되었을 때 / 텍스트가 모두 삭제되었을 때
 
 	if(!this.isDeleting && this.txt === fullTxt) {
@@ -91,6 +92,7 @@ TypeWriter.prototype.type = function() {
 		this.isDeleting = false;
 		this.wordsIndex++ // 다음 텍스트로 넘어가기
 	}
+
 
 
 
