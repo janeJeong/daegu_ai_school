@@ -397,8 +397,6 @@ document.querySelectorAll('.btn').forEach(function(element, index) {
 
 
 
-
-
 /* 이전 이미지 슬라이드 효과 (0831)
 var arr = [
 	{
