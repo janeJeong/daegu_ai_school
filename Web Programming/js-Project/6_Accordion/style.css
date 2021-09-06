@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+	margin: 50px auto;
+	font-weight: 400;
+	text-align: center;
+}
+
+h1 {
+	font-size: 70px;
+}
+
+button.accordion {
+	width: 70%;
+	background-color: #dd1c1a;
+
+	color: #ffffff;
+	font-size: 18px;
+	text-align: left;
+
+	cursor: pointer;
+	padding: 18px;
+
+	transition: all 0.4s;
+}
+
+button:focus {
+	outline: none;
+}
+
+button.accordion.active,
+button.accordion:hover {
+	background-color: #9b0a07;
+}
+
+.panel {
+	overflow: hidden;
+	width: 67.45%;
+	margin: 0 auto;
+
+	padding: 0px 18px;
+	color: #000000;
+
+	max-height: 0;
+
+	transition: max-height 0.2s linear;
+}
+
+div.panel p {
+	text-align: left;
+}

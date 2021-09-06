@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	font-family: 'Lato', sans-serif;
+}
+
+button {
+	width: 300px;
+	height: 50px;
+	border: none;
+	background-color: #000000;
+
+	color: #ffffff;
+	font-size: 20px;
+
+	cursor: pointer;
+}
+
+#snackbar {
+	visibility: hidden;
+	position: absolute;
+	width: 300px;
+
+	background-color: #ffffff;
+	border: solid 1px #000000;
+
+	padding: 20px;
+
+	bottom: 30px;
+	/* 중앙정렬 */
+	left: 50%;
+	transform: translateX(-50%);
+
+	border-radius: 5px;
+
+	color: #000000;
+	font-size: 18px;
+
+	text-align: center;
+}
+
+
+#snackbar.show {
+	visibility: visible;
+	animation: fadeIn 0.5s, fadeOut 0.5s 2.5s forwards; /*입력된 순서대로 동작*/
+}
+
+@Keyframes fadeIn {
+	from {
+		bottom: 0;
+		opacity: 0;
+	}
+
+	to {
+		bottom: 30px;  /* 원래 있던 위치 */
+		opacity: 1;
+	}
+}
+
+@Keyframes fadeOut {
+	from {
+		bottom: 30px;   원래 있던 위치 
+		opacity: 1;
+}
+
+	to {
+		bottom: 0;
+		opacity: 0;
+	}
+}
+
+
+
+
+
