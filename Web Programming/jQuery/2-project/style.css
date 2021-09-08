@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+.select {
+	width: 100%;
+	height: 50px;
+	margin-top: 10px;
+	text-align: center;
+
+	cursor: pointer;
+}
+
+.select.one {
+	background-color: #ffe1a8;
+}
+
+.select.two {
+	background-color: #e2605c;
+}
+
+.select.three {
+	background-color: #723046;
+}
+
+.check_icon {
+	display: none;
+	width: 20px;
+	height: 20px;
+	background-image: url(check.png);
+	background-position: center;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	margin-top: 15px;
+}
+
+.select.on .check_icon {
+	display: inline-block;
+}
